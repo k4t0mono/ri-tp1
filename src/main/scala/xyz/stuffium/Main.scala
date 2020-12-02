@@ -47,17 +47,6 @@ object Main extends LazyLogging {
       println(x.doc, searcher.doc(x.doc).getField("recordNumber").stringValue())
     })
 
-//    // 4. display results
-//    System.out.println("Found " + hits.length + " hits.")
-//    for (i <- 0 until hits.length) {
-//      val docId = hits(i).doc
-//      val d = searcher.doc(docId)
-//      System.out.println((i + 1) + ". " + d.get("isbn") + "\t" + d.get("title"))
-//    }
-
-    // reader can only be closed when there
-    // is no need to access the documents any more.
-
     logger.info("Say goodbye Data")
   }
 
