@@ -1,6 +1,9 @@
 package xyz.stuffium
 
+import java.io.FileInputStream
+
 import com.typesafe.scalalogging.LazyLogging
+import opennlp.tools.tokenize.{TokenizerME, TokenizerModel}
 import xyz.stuffium.utils.{DocumentHolder, QueryHolder}
 
 import scala.collection.mutable.ListBuffer
@@ -10,6 +13,9 @@ object PreProcessor extends LazyLogging {
 
   val cfc_files = List("cf74", "cf75", "cf76", "cf77", "cf78", "cf79")
   val cfc_queries = "cfquery"
+  val model = new TokenizerModel(new FileInputStream("./models/en-token.bin"))
+  val tokenizer = new TokenizerME(model)
+  val stopWords: List[String] = loadStopWords()
 
   def importCFC(): List[(String, String)] = {
     val data = new ListBuffer[DocumentHolder]
@@ -21,12 +27,15 @@ object PreProcessor extends LazyLogging {
       .toList
   }
 
-  def importCFQueries(): Unit = {
+  def importCFQueries(): List[QueryHolder] = {
     loadCFCQuery(s"./data/$cfc_queries")
   }
 
   def treatData(s: String): String = {
-    s.toLowerCase
+    tokenizer
+      .tokenize(s.toLowerCase())
+      .filter(x => !stopWords.contains(x))
+      .mkString(" ")
   }
 
   def loadCFCQuery(path: String): List[QueryHolder] = {
@@ -46,10 +55,9 @@ object PreProcessor extends LazyLogging {
         case "QU " => qh.updateQuery(line); qu_flag = true
         case "NR " => qu_flag = false
         case "RD " => qh.updateRelevant(line); rd_flag = true
-        case _ => {
-          if(qu_flag) qh.updateQuery(line);
+        case _ =>
+          if(qu_flag) qh.updateQuery(line)
           if(rd_flag) qh.updateRelevant(line)
-        }
       }
 
       if(x.strip().isEmpty) {
@@ -116,6 +124,14 @@ object PreProcessor extends LazyLogging {
 
     logger.debug(s"Found ${data.size} articles")
     data.toList
+  }
+
+  def loadStopWords(): List[String] = {
+    val buff = Source.fromFile("./models/stopwords_en.txt")
+
+    buff
+      .getLines()
+      .toList
   }
 
 }

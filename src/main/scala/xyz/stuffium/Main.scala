@@ -25,7 +25,9 @@ object Main extends LazyLogging {
   def main(args: Array[String]): Unit = {
     logger.info("Warp 10, engage")
 
-    PreProcessor.importCFQueries()
+//    PreProcessor.importCFQueries()
+
+    println(PreProcessor.treatData("And my present for Chris is a brand new computer desk"))
 
 //    val data = PreProcessor.importCFC()
 //    insertData(data)
