@@ -1,6 +1,7 @@
 package xyz.stuffium
 
 import com.typesafe.scalalogging.LazyLogging
+import xyz.stuffium.utils.{DocumentHolder, QueryHolder}
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
@@ -8,29 +9,70 @@ import scala.io.Source
 object PreProcessor extends LazyLogging {
 
   val cfc_files = List("cf74", "cf75", "cf76", "cf77", "cf78", "cf79")
+  val cfc_queries = "cfquery"
 
   def importCFC(): List[(String, String)] = {
-    val data = new ListBuffer[DataHolder]
+    val data = new ListBuffer[DocumentHolder]
 
-    cfc_files.foreach(x => data.addAll(loadCFC(s"./data/$x")))
+    cfc_files.foreach(x => data.addAll(loadCFCData(s"./data/$x")))
 
     data
       .map(x => (treatData(x.extractData()), x.recordNumber))
       .toList
   }
 
+  def importCFQueries(): Unit = {
+    loadCFCQuery(s"./data/$cfc_queries")
+  }
+
   def treatData(s: String): String = {
     s.toLowerCase
   }
 
-  def loadCFC(path: String): List[DataHolder] = {
-    logger.debug(s"importCFC($path}")
+  def loadCFCQuery(path: String): List[QueryHolder] = {
+    logger.debug(s"loadCFCQuery($path}")
 
-    val data: ListBuffer[DataHolder] = new ListBuffer[DataHolder]
-
+    val data = new ListBuffer[QueryHolder]
     val buff = Source.fromFile(path)
 
-    var dh = new DataHolder()
+    var qh = new QueryHolder()
+    var qu_flag = false
+    var rd_flag = false
+    buff.getLines().foreach(x => {
+      val (code, line) = x.splitAt(3)
+
+      code match{
+        case "QN " => qh.queryNumber = line.strip().toInt
+        case "QU " => qh.updateQuery(line); qu_flag = true
+        case "NR " => qu_flag = false
+        case "RD " => qh.updateRelevant(line); rd_flag = true
+        case _ => {
+          if(qu_flag) qh.updateQuery(line);
+          if(rd_flag) qh.updateRelevant(line)
+        }
+      }
+
+      if(x.strip().isEmpty) {
+        rd_flag = false
+        qh.complete()
+        data.addOne(qh)
+        logger.trace(s"Found new query: $qh")
+
+        qh = new QueryHolder()
+      }
+    })
+
+    logger.debug(s"Found ${data.size} queries")
+    data.toList
+  }
+
+  def loadCFCData(path: String): List[DocumentHolder] = {
+    logger.debug(s"loadCFCData($path}")
+
+    val data = new ListBuffer[DocumentHolder]
+    val buff = Source.fromFile(path)
+
+    var dh = new DocumentHolder()
     var ti_flag = false
     var mj_flag = false
     var mn_flag = false
@@ -66,9 +108,9 @@ object PreProcessor extends LazyLogging {
         ct_flag = false
         dh.complete()
         data.addOne(dh)
-        logger.trace(s"Found new article $dh")
+        logger.trace(s"Found new article: $dh")
 
-        dh = new DataHolder()
+        dh = new DocumentHolder()
       }
     })
 

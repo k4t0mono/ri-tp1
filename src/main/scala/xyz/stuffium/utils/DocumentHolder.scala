@@ -1,8 +1,8 @@
-package xyz.stuffium
+package xyz.stuffium.utils
 
 import scala.collection.mutable.ListBuffer
 
-class DataHolder(
+class DocumentHolder(
                   var paperNumber: String, var recordNumber: String, var accessionNumber: String,
                   var authors: String, var title: String, var source: String, var majorSubjects: String,
                   var minorSubjects: String, var _abstract: String, var references: String,

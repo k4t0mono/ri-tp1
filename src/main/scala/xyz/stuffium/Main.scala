@@ -6,9 +6,7 @@ import java.nio.file.Paths
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.analysis.standard.StandardAnalyzer
 import org.apache.lucene.document.{Document, Field, StringField, TextField}
-import org.apache.lucene.index.{DirectoryReader, IndexWriter, IndexWriterConfig}
-import org.apache.lucene.queryparser.classic.QueryParser
-import org.apache.lucene.search.IndexSearcher
+import org.apache.lucene.index.{IndexWriter, IndexWriterConfig}
 import org.apache.lucene.store.{Directory, MMapDirectory}
 
 object Main extends LazyLogging {
@@ -16,7 +14,7 @@ object Main extends LazyLogging {
   org.slf4j.LoggerFactory
     .getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME)
     .asInstanceOf[ch.qos.logback.classic.Logger]
-    .setLevel(ch.qos.logback.classic.Level.DEBUG)
+    .setLevel(ch.qos.logback.classic.Level.TRACE)
 
   val analyzer: StandardAnalyzer = new StandardAnalyzer()
   val index: Directory = new MMapDirectory(Paths.get("db"))
@@ -27,25 +25,27 @@ object Main extends LazyLogging {
   def main(args: Array[String]): Unit = {
     logger.info("Warp 10, engage")
 
-    val data = PreProcessor.importCFC()
-    insertData(data)
+    PreProcessor.importCFQueries()
 
-
-    val querystr = "What are the effects of calcium on the physical properties of mucus from CF patients?"
-
-    val q = new QueryParser("text", analyzer).parse(querystr)
-
-    val hitsPerPage = 10
-    val reader = DirectoryReader.open(index)
-    val searcher = new IndexSearcher(reader)
-    val docs = searcher.search(q, hitsPerPage)
-    val hits = docs.scoreDocs
-
-    println(s"Found ${hits.length} documents")
-
-    hits.foreach(x => {
-      println(x.doc, searcher.doc(x.doc).getField("recordNumber").stringValue())
-    })
+//    val data = PreProcessor.importCFC()
+//    insertData(data)
+//
+//
+//    val querystr = "What are the effects of calcium on the physical properties of mucus from CF patients?"
+//
+//    val q = new QueryParser("text", analyzer).parse(querystr)
+//
+//    val hitsPerPage = 10
+//    val reader = DirectoryReader.open(index)
+//    val searcher = new IndexSearcher(reader)
+//    val docs = searcher.search(q, hitsPerPage)
+//    val hits = docs.scoreDocs
+//
+//    println(s"Found ${hits.length} documents")
+//
+//    hits.foreach(x => {
+//      println(x.doc, searcher.doc(x.doc).getField("recordNumber").stringValue())
+//    })
 
     logger.info("Say goodbye Data")
   }
