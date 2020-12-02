@@ -6,54 +6,61 @@ import java.nio.file.Paths
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.analysis.standard.StandardAnalyzer
 import org.apache.lucene.document.{Document, Field, StringField, TextField}
-import org.apache.lucene.index.{IndexWriter, IndexWriterConfig}
-import org.apache.lucene.store.{Directory, MMapDirectory}
+import org.apache.lucene.index.{DirectoryReader, IndexWriter, IndexWriterConfig}
+import org.apache.lucene.queryparser.classic.QueryParser
+import org.apache.lucene.search.{IndexSearcher, TopDocs}
+import org.apache.lucene.store.MMapDirectory
+import xyz.stuffium.utils.PreProcessor
 
 object Main extends LazyLogging {
 
   org.slf4j.LoggerFactory
     .getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME)
     .asInstanceOf[ch.qos.logback.classic.Logger]
-    .setLevel(ch.qos.logback.classic.Level.TRACE)
+    .setLevel(ch.qos.logback.classic.Level.INFO)
 
   val analyzer: StandardAnalyzer = new StandardAnalyzer()
-  val index: Directory = new MMapDirectory(Paths.get("db"))
-  val config = new IndexWriterConfig(analyzer)
-//  val reader: DirectoryReader = DirectoryReader.open(index)
-//  val searcher = new IndexSearcher(reader)
+  var index: Option[MMapDirectory] = None
+  var config: Option[IndexWriterConfig] = None
+  var reader: Option[DirectoryReader] = None
+  var searcher: Option[IndexSearcher] = None
+  val hits = 10
 
   def main(args: Array[String]): Unit = {
     logger.info("Warp 10, engage")
 
-//    PreProcessor.importCFQueries()
+    index = Some(new MMapDirectory(Paths.get("db")))
+    config = Some(new IndexWriterConfig(analyzer))
 
-    println(PreProcessor.treatData("And my present for Chris is a brand new computer desk"))
+    val queries = PreProcessor.importCFQueries()
+    val data = PreProcessor.importCFC()
+    insertData(data)
 
-//    val data = PreProcessor.importCFC()
-//    insertData(data)
-//
-//
-//    val querystr = "What are the effects of calcium on the physical properties of mucus from CF patients?"
-//
-//    val q = new QueryParser("text", analyzer).parse(querystr)
-//
-//    val hitsPerPage = 10
-//    val reader = DirectoryReader.open(index)
-//    val searcher = new IndexSearcher(reader)
-//    val docs = searcher.search(q, hitsPerPage)
-//    val hits = docs.scoreDocs
-//
-//    println(s"Found ${hits.length} documents")
-//
-//    hits.foreach(x => {
-//      println(x.doc, searcher.doc(x.doc).getField("recordNumber").stringValue())
-//    })
+    reader = Some(DirectoryReader.open(index.get))
+    searcher = Some(new IndexSearcher(reader.get))
+
+    val qh = queries(69)
+    val results = query(qh.queryText)
+    logger.info(s"Found ${results.totalHits} for the query $qh")
+    results
+      .scoreDocs
+      .splitAt(10)
+      ._1
+      .zip(qh.relevantDocuments)
+      .map(x => (x._1.doc, x._2.number()))
+      .foreach(println)
 
     logger.info("Say goodbye Data")
   }
 
+  def query(q: String, field: String = "text"): TopDocs = {
+    val query = new QueryParser(field, analyzer).parse(q)
+
+    searcher.get.search(query, hits)
+  }
+
   def insertData(data: List[(String, String)]): Unit = {
-    val w = new IndexWriter(index, config)
+    val w = new IndexWriter(index.get, config.get)
 
     data
       .foreach(x => addDoc(w, x._1, x._2))

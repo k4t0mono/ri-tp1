@@ -1,10 +1,9 @@
-package xyz.stuffium
+package xyz.stuffium.utils
 
 import java.io.FileInputStream
 
 import com.typesafe.scalalogging.LazyLogging
 import opennlp.tools.tokenize.{TokenizerME, TokenizerModel}
-import xyz.stuffium.utils.{DocumentHolder, QueryHolder}
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
@@ -12,7 +11,7 @@ import scala.io.Source
 object PreProcessor extends LazyLogging {
 
   val cfc_files = List("cf74", "cf75", "cf76", "cf77", "cf78", "cf79")
-  val cfc_queries = "cfquery"
+  val cfc_queries = List("cfquery")
   val model = new TokenizerModel(new FileInputStream("./models/en-token.bin"))
   val tokenizer = new TokenizerME(model)
   val stopWords: List[String] = loadStopWords()
@@ -21,6 +20,7 @@ object PreProcessor extends LazyLogging {
     val data = new ListBuffer[DocumentHolder]
 
     cfc_files.foreach(x => data.addAll(loadCFCData(s"./data/$x")))
+    logger.info(s"Found ${data.length} articles")
 
     data
       .map(x => (treatData(x.extractData()), x.recordNumber))
@@ -28,7 +28,12 @@ object PreProcessor extends LazyLogging {
   }
 
   def importCFQueries(): List[QueryHolder] = {
-    loadCFCQuery(s"./data/$cfc_queries")
+    val data = new ListBuffer[QueryHolder]
+
+    cfc_queries.foreach(x => data.addAll(loadCFCQuery(s"./data/$x")))
+    logger.info(s"Found ${data.length} queries")
+
+    data.toList
   }
 
   def treatData(s: String): String = {
@@ -50,17 +55,17 @@ object PreProcessor extends LazyLogging {
     buff.getLines().foreach(x => {
       val (code, line) = x.splitAt(3)
 
-      code match{
+      code match {
         case "QN " => qh.queryNumber = line.strip().toInt
         case "QU " => qh.updateQuery(line); qu_flag = true
         case "NR " => qu_flag = false
         case "RD " => qh.updateRelevant(line); rd_flag = true
         case _ =>
-          if(qu_flag) qh.updateQuery(line)
-          if(rd_flag) qh.updateRelevant(line)
+          if (qu_flag) qh.updateQuery(line)
+          if (rd_flag) qh.updateRelevant(line)
       }
 
-      if(x.strip().isEmpty) {
+      if (x.strip().isEmpty) {
         rd_flag = false
         qh.complete()
         data.addOne(qh)
@@ -104,15 +109,15 @@ object PreProcessor extends LazyLogging {
         case "RF " => dh.updateCitation(line); ab_flag = false; rf_flag = true
         case "CT " => dh.updateCitation(line); rf_flag = false; ct_flag = true
         case _ =>
-          if(ti_flag) dh.updateTitle(line)
-          if(mj_flag) dh.updateMajorSubjects(line)
-          if(mn_flag) dh.updateMinorSubjects(line)
-          if(ab_flag) dh.updateAbstract(line)
-          if(rf_flag) dh.updateReferences(line)
-          if(ct_flag) dh.updateCitation(line)
+          if (ti_flag) dh.updateTitle(line)
+          if (mj_flag) dh.updateMajorSubjects(line)
+          if (mn_flag) dh.updateMinorSubjects(line)
+          if (ab_flag) dh.updateAbstract(line)
+          if (rf_flag) dh.updateReferences(line)
+          if (ct_flag) dh.updateCitation(line)
       }
 
-      if(x.isEmpty) {
+      if (x.isEmpty) {
         ct_flag = false
         dh.complete()
         data.addOne(dh)
