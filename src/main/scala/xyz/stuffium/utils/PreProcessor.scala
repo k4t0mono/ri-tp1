@@ -15,6 +15,7 @@ object PreProcessor extends LazyLogging {
   val model = new TokenizerModel(new FileInputStream("./models/en-token.bin"))
   val tokenizer = new TokenizerME(model)
   val stopWords: List[String] = loadStopWords()
+  val punctuation: List[String] = loadPunctuations()
 
   def importCFC(): List[(String, String)] = {
     val data = new ListBuffer[DocumentHolder]
@@ -40,6 +41,7 @@ object PreProcessor extends LazyLogging {
     tokenizer
       .tokenize(s.toLowerCase())
       .filter(x => !stopWords.contains(x))
+      .filter(x => !punctuation.contains(x))
       .mkString(" ")
   }
 
@@ -68,6 +70,9 @@ object PreProcessor extends LazyLogging {
       if (x.strip().isEmpty) {
         rd_flag = false
         qh.complete()
+
+        qh.queryText = treatData(qh.queryText)
+
         data.addOne(qh)
         logger.trace(s"Found new query: $qh")
 
@@ -106,6 +111,7 @@ object PreProcessor extends LazyLogging {
         case "MJ " => dh.updateMajorSubjects(line); mj_flag = true
         case "MN " => dh.updateMinorSubjects(line); mj_flag = false; mn_flag = true
         case "AB " => dh.updateAbstract(line); mn_flag = false; ab_flag = true
+        case "EX " => dh.updateAbstract(line); mn_flag = false; ab_flag = true
         case "RF " => dh.updateCitation(line); ab_flag = false; rf_flag = true
         case "CT " => dh.updateCitation(line); rf_flag = false; ct_flag = true
         case _ =>
@@ -133,6 +139,14 @@ object PreProcessor extends LazyLogging {
 
   def loadStopWords(): List[String] = {
     val buff = Source.fromFile("./models/stopwords_en.txt")
+
+    buff
+      .getLines()
+      .toList
+  }
+
+  def loadPunctuations(): List[String] = {
+    val buff = Source.fromFile("./models/punctuation_en.txt")
 
     buff
       .getLines()

@@ -192,4 +192,4 @@ gradle-app.setting
 data/
 db/
 .attach_pid*
-models/
+models/en-token.bin
