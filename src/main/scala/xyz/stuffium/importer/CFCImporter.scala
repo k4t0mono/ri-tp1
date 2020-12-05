@@ -12,7 +12,7 @@ import xyz.stuffium.metrics.CFCJudgement
 object CFCImporter extends LazyLogging {
 
   val cfc_files = List("cf74", "cf75", "cf76", "cf77", "cf78", "cf79")
-  val cfc_queries = List("cfquery")
+  val cfc_queries = List("cfquery2")
 
   def importCFC(): List[(String, String)] = {
     val data = new ListBuffer[DocumentHolder]

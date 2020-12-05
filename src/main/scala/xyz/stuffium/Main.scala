@@ -5,6 +5,7 @@ import java.nio.file.Paths
 
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.analysis.standard.StandardAnalyzer
+import org.apache.lucene.benchmark.quality.QualityBenchmark
 import org.apache.lucene.document.{Document, Field, StringField, TextField}
 import org.apache.lucene.index.{DirectoryReader, IndexWriter, IndexWriterConfig}
 import org.apache.lucene.queryparser.classic.QueryParser
@@ -12,6 +13,7 @@ import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.store.MMapDirectory
 import xyz.stuffium.importer.CFCImporter
 import xyz.stuffium.metrics.CFCJudge
+import xyz.stuffium.utils.CFCQualityQueryParser
 
 object Main extends LazyLogging {
 
@@ -35,15 +37,20 @@ object Main extends LazyLogging {
 
     val (qqs, cjs) = CFCImporter.importCFQueries()
     val data = CFCImporter.importCFC()
-//    insertData(data)
+    insertData(data)
+
+    reader = Some(DirectoryReader.open(index.get))
+    searcher = Some(new IndexSearcher(reader.get))
 
     val judge = new CFCJudge
-    judge.addJudgments(cjs)
+    val qqp = new CFCQualityQueryParser(analyzer, "text")
+    val qrun = new QualityBenchmark(qqs.toArray, qqp, searcher.get, "text")
 
-//    reader = Some(DirectoryReader.open(index.get))
-//    searcher = Some(new IndexSearcher(reader.get))
+    import java.io.PrintWriter
+    val logger2 = new PrintWriter(System.out, true)
+    val stats = qrun.execute(judge, null, logger2)
 
-    println(judge.isRelevant("138", qqs.head))
+    println(stats(0).toString())
 
 //    val results = query(qh.queryText)
 //    logger.info(s"Found ${results.totalHits} for the query $qh")
