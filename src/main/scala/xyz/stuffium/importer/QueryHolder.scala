@@ -1,5 +1,10 @@
 package xyz.stuffium.importer
 
+import java.util
+
+import org.apache.lucene.benchmark.quality.QualityQuery
+import xyz.stuffium.metrics.CFCJudgement
+
 import scala.collection.mutable.ListBuffer
 
 class QueryHolder(var queryNumber: Int, var queryText: String, var relevantDocuments: List[RelevantDocument]) {
@@ -29,6 +34,17 @@ class QueryHolder(var queryNumber: Int, var queryText: String, var relevantDocum
       .toList
   }
 
+
+  def convert: (QualityQuery, CFCJudgement) = {
+    val fields = new util.HashMap[String, String]()
+    fields.put("queryText", queryText)
+
+    val qq = new QualityQuery(queryNumber.toString, fields)
+    val cj = new CFCJudgement(queryNumber.toString, relevantDocuments)
+    relevantDocuments.foreach(x => cj.addDocument(x))
+
+    (qq, cj)
+  }
 
   override def toString = s"<QueryHolder QN=$queryNumber NR=${relevantDocuments.length} />"
 }

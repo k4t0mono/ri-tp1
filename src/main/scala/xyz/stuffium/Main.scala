@@ -11,6 +11,7 @@ import org.apache.lucene.queryparser.classic.QueryParser
 import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.store.MMapDirectory
 import xyz.stuffium.importer.CFCImporter
+import xyz.stuffium.metrics.CFCJudge
 
 object Main extends LazyLogging {
 
@@ -32,23 +33,27 @@ object Main extends LazyLogging {
     index = Some(new MMapDirectory(Paths.get("db")))
     config = Some(new IndexWriterConfig(analyzer))
 
-    val queries = CFCImporter.importCFQueries()
+    val (qqs, cjs) = CFCImporter.importCFQueries()
     val data = CFCImporter.importCFC()
-    insertData(data)
+//    insertData(data)
 
-    reader = Some(DirectoryReader.open(index.get))
-    searcher = Some(new IndexSearcher(reader.get))
+    val judge = new CFCJudge
+    judge.addJudgments(cjs)
 
-    val qh = queries(69)
-    val results = query(qh.queryText)
-    logger.info(s"Found ${results.totalHits} for the query $qh")
-    results
-      .scoreDocs
-      .splitAt(10)
-      ._1
-      .zip(qh.relevantDocuments)
-      .map(x => (x._1.doc, x._2.number()))
-      .foreach(println)
+//    reader = Some(DirectoryReader.open(index.get))
+//    searcher = Some(new IndexSearcher(reader.get))
+
+    println(judge.isRelevant("138", qqs.head))
+
+//    val results = query(qh.queryText)
+//    logger.info(s"Found ${results.totalHits} for the query $qh")
+//    results
+//      .scoreDocs
+//      .splitAt(10)
+//      ._1
+//      .zip(qh.relevantDocuments)
+//      .map(x => (x._1.doc, x._2.number()))
+//      .foreach(println)
 
     logger.info("Say goodbye Data")
   }

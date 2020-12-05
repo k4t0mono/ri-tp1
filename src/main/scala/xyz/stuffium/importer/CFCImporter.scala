@@ -6,6 +6,8 @@ import xyz.stuffium.PreProcessor.treatData
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
+import org.apache.lucene.benchmark.quality.QualityQuery
+import xyz.stuffium.metrics.CFCJudgement
 
 object CFCImporter extends LazyLogging {
 
@@ -23,13 +25,23 @@ object CFCImporter extends LazyLogging {
       .toList
   }
 
-  def importCFQueries(): List[QueryHolder] = {
+  def importCFQueries(): (List[QualityQuery], List[CFCJudgement]) = {
     val data = new ListBuffer[QueryHolder]
 
     cfc_queries.foreach(x => data.addAll(loadCFCQuery(s"./data/$x")))
     logger.info(s"Found ${data.length} queries")
 
-    data.toList
+    val qqs = new ListBuffer[QualityQuery]
+    val cjs = new ListBuffer[CFCJudgement]
+
+    data
+      .map(x => x.convert)
+      .foreach(x => {
+        qqs.addOne(x._1)
+        cjs.addOne(x._2)
+      })
+
+    (qqs.toList, cjs.toList)
   }
 
   def loadCFCQuery(path: String): List[QueryHolder] = {
