@@ -10,7 +10,7 @@ import org.apache.lucene.index.{DirectoryReader, IndexWriter, IndexWriterConfig}
 import org.apache.lucene.queryparser.classic.QueryParser
 import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.store.MMapDirectory
-import xyz.stuffium.utils.PreProcessor
+import xyz.stuffium.importer.CFCImporter
 
 object Main extends LazyLogging {
 
@@ -32,8 +32,8 @@ object Main extends LazyLogging {
     index = Some(new MMapDirectory(Paths.get("db")))
     config = Some(new IndexWriterConfig(analyzer))
 
-    val queries = PreProcessor.importCFQueries()
-    val data = PreProcessor.importCFC()
+    val queries = CFCImporter.importCFQueries()
+    val data = CFCImporter.importCFC()
     insertData(data)
 
     reader = Some(DirectoryReader.open(index.get))

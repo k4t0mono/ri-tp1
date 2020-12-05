@@ -1,4 +1,4 @@
-package xyz.stuffium.utils
+package xyz.stuffium.importer
 
 import scala.collection.mutable.ListBuffer
 

@@ -1,4 +1,4 @@
-package xyz.stuffium.utils
+package xyz.stuffium.importer
 
 class RelevantDocument(number: Int, score: String) {
 

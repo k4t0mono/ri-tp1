@@ -1,21 +1,16 @@
-package xyz.stuffium.utils
-
-import java.io.FileInputStream
+package xyz.stuffium.importer
 
 import com.typesafe.scalalogging.LazyLogging
-import opennlp.tools.tokenize.{TokenizerME, TokenizerModel}
+import xyz.stuffium.PreProcessor
+import xyz.stuffium.PreProcessor.treatData
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
 
-object PreProcessor extends LazyLogging {
+object CFCImporter extends LazyLogging {
 
   val cfc_files = List("cf74", "cf75", "cf76", "cf77", "cf78", "cf79")
   val cfc_queries = List("cfquery")
-  val model = new TokenizerModel(new FileInputStream("./models/en-token.bin"))
-  val tokenizer = new TokenizerME(model)
-  val stopWords: List[String] = loadStopWords()
-  val punctuation: List[String] = loadPunctuations()
 
   def importCFC(): List[(String, String)] = {
     val data = new ListBuffer[DocumentHolder]
@@ -24,7 +19,7 @@ object PreProcessor extends LazyLogging {
     logger.info(s"Found ${data.length} articles")
 
     data
-      .map(x => (treatData(x.extractData()), x.recordNumber))
+      .map(x => (PreProcessor.treatData(x.extractData()), x.recordNumber))
       .toList
   }
 
@@ -35,14 +30,6 @@ object PreProcessor extends LazyLogging {
     logger.info(s"Found ${data.length} queries")
 
     data.toList
-  }
-
-  def treatData(s: String): String = {
-    tokenizer
-      .tokenize(s.toLowerCase())
-      .filter(x => !stopWords.contains(x))
-      .filter(x => !punctuation.contains(x))
-      .mkString(" ")
   }
 
   def loadCFCQuery(path: String): List[QueryHolder] = {
@@ -135,22 +122,6 @@ object PreProcessor extends LazyLogging {
 
     logger.debug(s"Found ${data.size} articles")
     data.toList
-  }
-
-  def loadStopWords(): List[String] = {
-    val buff = Source.fromFile("./models/stopwords_en.txt")
-
-    buff
-      .getLines()
-      .toList
-  }
-
-  def loadPunctuations(): List[String] = {
-    val buff = Source.fromFile("./models/punctuation_en.txt")
-
-    buff
-      .getLines()
-      .toList
   }
 
 }
