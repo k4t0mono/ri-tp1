@@ -51,8 +51,15 @@ object Main extends LazyLogging {
     val qrun = new QualityBenchmark(qqs.toArray, qqp, searcher.get, fileNameField)
 
     import java.io.PrintWriter
-    val logger2 = new PrintWriter(System.out, true)
+    val logger2 = new PrintWriter("log")
     val stats = qrun.execute(judge, null, logger2)
+
+    stats
+      .head
+      .getRecallPoints
+      .foreach(x=> {
+        println(x.getRecall, x.getRank)
+      })
 
 
     logger.info("Say goodbye Data")

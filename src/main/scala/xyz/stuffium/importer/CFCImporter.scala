@@ -12,7 +12,7 @@ import xyz.stuffium.metrics.CFCJudgement
 object CFCImporter extends LazyLogging {
 
   val cfc_files = List("cf74", "cf75", "cf76", "cf77", "cf78", "cf79")
-  val cfc_queries = List("cfquery2")
+  val cfc_queries = List("cfquery")
 
   def importCFC(): List[(String, String)] = {
     val data = new ListBuffer[DocumentHolder]
@@ -29,7 +29,7 @@ object CFCImporter extends LazyLogging {
     val data = new ListBuffer[QueryHolder]
 
     cfc_queries.foreach(x => data.addAll(loadCFCQuery(s"./data/$x")))
-    logger.info(s"Found ${data.length} queries")
+    logger.trace(s"Found ${data.length} queries")
 
     val qqs = new ListBuffer[QualityQuery]
     val cjs = new ListBuffer[CFCJudgement]

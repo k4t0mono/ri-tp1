@@ -12,13 +12,20 @@ object PreProcessor extends LazyLogging {
   val model = new TokenizerModel(new FileInputStream("./models/en-token.bin"))
   val tokenizer = new TokenizerME(model)
   val stopWords: List[String] = loadStopWords()
-  val punctuation: List[String] = loadPunctuations()
+  val punctuation: List[Char] = loadPunctuations()
 
-  def treatData(s: String): String = {
+  def treatData(_s: String): String = {
+    val s = _s
+      .toLowerCase()
+      .split(" ")
+      .map(x => x.toList)
+      .filter(x => x.nonEmpty)
+      .map(x => x.filter(x => !punctuation.contains(x)).mkString(""))
+      .mkString(" ")
+
     tokenizer
-      .tokenize(s.toLowerCase())
+      .tokenize(s)
       .filter(x => !stopWords.contains(x))
-      .filter(x => !punctuation.contains(x))
       .mkString(" ")
   }
 
@@ -30,12 +37,13 @@ object PreProcessor extends LazyLogging {
       .toList
   }
 
-  def loadPunctuations(): List[String] = {
+  def loadPunctuations(): List[Char] = {
     val buff = Source.fromFile("./models/punctuation_en.txt")
 
     buff
       .getLines()
       .toList
+      .map(x => x.toCharArray.head)
   }
 
 }

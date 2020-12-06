@@ -14,7 +14,6 @@ class CFCJudgement(queryID: String, relevantDocuments: List[RelevantDocument]) e
   }
 
   def isRelevant(doc_number: String): Boolean = {
-    logger.info(s"isRelevant: $doc_number")
     documents.contains(doc_number)
   }
 
