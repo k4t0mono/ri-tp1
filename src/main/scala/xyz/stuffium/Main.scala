@@ -1,19 +1,19 @@
 package xyz.stuffium
 
-import java.io.IOException
+import java.io.{IOException, PrintWriter}
 import java.nio.file.Paths
 
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.analysis.standard.StandardAnalyzer
-import org.apache.lucene.benchmark.quality.QualityBenchmark
+import org.apache.lucene.benchmark.quality.{QualityBenchmark, QualityQuery, QualityStats}
 import org.apache.lucene.document.{Document, Field, StringField, TextField}
 import org.apache.lucene.index.{DirectoryReader, IndexWriter, IndexWriterConfig}
-import org.apache.lucene.queryparser.classic.QueryParser
-import org.apache.lucene.search.{IndexSearcher, TopDocs}
+import org.apache.lucene.search.IndexSearcher
+import org.apache.lucene.search.similarities.BM25Similarity
 import org.apache.lucene.store.MMapDirectory
 import xyz.stuffium.importer.CFCImporter
 import xyz.stuffium.metrics.CFCJudge
-import xyz.stuffium.utils.CFCQualityQueryParser
+import xyz.stuffium.utils.{VectorSimilarity, CFCQualityQueryParser}
 
 object Main extends LazyLogging {
 
@@ -23,59 +23,86 @@ object Main extends LazyLogging {
     .setLevel(ch.qos.logback.classic.Level.INFO)
 
   val analyzer: StandardAnalyzer = new StandardAnalyzer()
-  var index: Option[MMapDirectory] = None
-  var config: Option[IndexWriterConfig] = None
-  var reader: Option[DirectoryReader] = None
-  var searcher: Option[IndexSearcher] = None
   val hits = 100
   val fileNameField = "recordNumber"
   val textField = "text"
 
+  val index_vector = new MMapDirectory(Paths.get("db", "vector"))
+  val index_bm25 = new MMapDirectory(Paths.get("db", "bm25"))
+
   def main(args: Array[String]): Unit = {
     logger.info("Warp 10, engage")
 
-    index = Some(new MMapDirectory(Paths.get("db")))
-    config = Some(new IndexWriterConfig(analyzer))
-
     val (qqs, cjs) = CFCImporter.importCFQueries()
     val data = CFCImporter.importCFC()
-    insertData(data)
 
-    reader = Some(DirectoryReader.open(index.get))
-    searcher = Some(new IndexSearcher(reader.get))
+    storeVector(data)
+    storeBM25(data)
 
     val judge = new CFCJudge
     judge.addJudgments(cjs)
-
     val qqp = new CFCQualityQueryParser(analyzer, textField)
-    val qrun = new QualityBenchmark(qqs.toArray, qqp, searcher.get, fileNameField)
 
-    import java.io.PrintWriter
-    val logger2 = new PrintWriter("log")
-    val stats = qrun.execute(judge, null, logger2)
-
-    stats
-      .head
-      .getRecallPoints
-      .foreach(x=> {
-        println(x.getRecall, x.getRank)
-      })
-
+    val sv = testVector(qqs.toArray, qqp, judge)
+    val sp = testBM25(qqs.toArray, qqp, judge)
 
     logger.info("Say goodbye Data")
   }
 
-  def query(q: String, field: String = "text"): TopDocs = {
-    val query = new QueryParser(field, analyzer).parse(q)
+  def testVector(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): QualityStats = {
+    val qrun = new QualityBenchmark(qqs, qqp, getVectorSearcher, fileNameField)
+    val lg = new PrintWriter("log_vector")
+    val stats = qrun.execute(judge, null, lg)
 
-    searcher.get.search(query, hits)
+    QualityStats.average(stats)
   }
 
-  def insertData(data: List[(String, String)]): Unit = {
-    val w = new IndexWriter(index.get, config.get)
+  def testBM25(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): QualityStats = {
+    val qrun = new QualityBenchmark(qqs, qqp, getBM25Searcher, fileNameField)
+    val lg = new PrintWriter("log_bm25")
+    val stats = qrun.execute(judge, null, lg)
 
-    data
-      .foreach(x => addDoc(w, x._1, x._2))
+    QualityStats.average(stats)
+  }
+
+  def getBM25Searcher: IndexSearcher = {
+    val reader = DirectoryReader.open(index_bm25)
+
+    val is = new IndexSearcher(reader)
+    is.setSimilarity(new BM25Similarity)
+
+    is
+  }
+
+  def getVectorSearcher: IndexSearcher = {
+    val reader = DirectoryReader.open(index_vector)
+
+    val is = new IndexSearcher(reader)
+    is.setSimilarity(new VectorSimilarity)
+
+    is
+  }
+
+  def storeBM25(data: List[(String, String)]): Unit = {
+    logger.info("Storing on BM25 model")
+    val iwc = new IndexWriterConfig(analyzer)
+    iwc.setSimilarity(new BM25Similarity)
+
+    insertData(data, index_bm25, iwc)
+  }
+
+  def storeVector(data: List[(String, String)]): Unit = {
+    logger.info("Storing on vector model")
+    val iwc = new IndexWriterConfig(analyzer)
+    iwc.setSimilarity(new VectorSimilarity)
+
+    insertData(data, index_vector, iwc)
+  }
+
+  def insertData(data: List[(String, String)], index: MMapDirectory, config: IndexWriterConfig): Unit = {
+    val w = new IndexWriter(index, config)
+
+    data.foreach(x => addDoc(w, x._1, x._2))
 
     w.close()
   }
