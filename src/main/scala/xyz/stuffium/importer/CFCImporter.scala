@@ -102,7 +102,7 @@ object CFCImporter extends LazyLogging {
 
       code match {
         case "PN " => dh.paperNumber = line
-        case "RN " => dh.recordNumber = line
+        case "RN " => dh.recordNumber = line.strip().toInt.toString
         case "AN " => dh.accessionNumber = line
         case "AU " => dh.authors = line
         case "TI " => dh.updateTitle(line); ti_flag = true

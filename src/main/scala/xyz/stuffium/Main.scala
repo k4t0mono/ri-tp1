@@ -27,7 +27,9 @@ object Main extends LazyLogging {
   var config: Option[IndexWriterConfig] = None
   var reader: Option[DirectoryReader] = None
   var searcher: Option[IndexSearcher] = None
-  val hits = 10
+  val hits = 100
+  val fileNameField = "recordNumber"
+  val textField = "text"
 
   def main(args: Array[String]): Unit = {
     logger.info("Warp 10, engage")
@@ -43,24 +45,15 @@ object Main extends LazyLogging {
     searcher = Some(new IndexSearcher(reader.get))
 
     val judge = new CFCJudge
-    val qqp = new CFCQualityQueryParser(analyzer, "text")
-    val qrun = new QualityBenchmark(qqs.toArray, qqp, searcher.get, "text")
+    judge.addJudgments(cjs)
+
+    val qqp = new CFCQualityQueryParser(analyzer, textField)
+    val qrun = new QualityBenchmark(qqs.toArray, qqp, searcher.get, fileNameField)
 
     import java.io.PrintWriter
     val logger2 = new PrintWriter(System.out, true)
     val stats = qrun.execute(judge, null, logger2)
 
-    println(stats(0).toString())
-
-//    val results = query(qh.queryText)
-//    logger.info(s"Found ${results.totalHits} for the query $qh")
-//    results
-//      .scoreDocs
-//      .splitAt(10)
-//      ._1
-//      .zip(qh.relevantDocuments)
-//      .map(x => (x._1.doc, x._2.number()))
-//      .foreach(println)
 
     logger.info("Say goodbye Data")
   }
@@ -84,8 +77,8 @@ object Main extends LazyLogging {
   private def addDoc(w: IndexWriter, text: String, recordNumber: String): Unit = {
     val doc = new Document()
 
-    doc.add(new TextField("text", text, Field.Store.YES))
-    doc.add(new StringField("recordNumber", recordNumber, Field.Store.YES))
+    doc.add(new TextField(textField, text, Field.Store.YES))
+    doc.add(new StringField(fileNameField, recordNumber, Field.Store.YES))
 
     w.addDocument(doc)
   }
