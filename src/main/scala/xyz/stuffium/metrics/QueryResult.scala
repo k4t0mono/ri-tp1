@@ -1,13 +1,16 @@
 package xyz.stuffium.metrics
 
-import org.apache.lucene.benchmark.quality.QualityStats
+import java.lang.reflect.Type
+
+import com.google.gson.{JsonElement, JsonObject, JsonSerializationContext, JsonSerializer}
+import org.apache.lucene.benchmark.quality.{QualityQuery, QualityStats}
 
 import scala.collection.mutable.ListBuffer
 
-class QueryResult(judge: CFCJudge, sh: Int = 10) {
+class QueryResult(val qq: QualityQuery, sh: Int = 10) {
 
   val results = new ListBuffer[StatsResult]
-  var p5, p10 = 0f
+  var precision, recall = 0f
   var mrr = 0f
 
   def process(stats: QualityStats): Unit = {
@@ -17,11 +20,14 @@ class QueryResult(judge: CFCJudge, sh: Int = 10) {
       )
     })
 
+    precision = results.last.precision
+    recall = results.last.recall
+
     calcMrr(sh)
   }
 
-  def genPRTable(): List[(Float, Float, Boolean)] = {
-    val table = new ListBuffer[(Float, Float, Boolean)]
+  def genPRTable(): List[TableEntry] = {
+    val table = new ListBuffer[TableEntry]
 
     for (ix <- 1 until 11) {
       val k = ix/10f
@@ -29,15 +35,15 @@ class QueryResult(judge: CFCJudge, sh: Int = 10) {
 
       if (pl.isEmpty) {
         interpolateAtRecallK(k) match {
-          case Some(p) => table.addOne(k, p, false)
-          case None => table.addOne(k, table.last._2, true)
+          case Some(p) => table.addOne(new TableEntry(k, p, false))
+          case None => if(table.nonEmpty) table.addOne(new TableEntry(k, table.last.precision, true))
         }
       } else {
-        table.addOne(k, pl.head.precision, false)
+        table.addOne(new TableEntry(k, pl.head.precision, false))
       }
     }
 
-    table.prepend((0f, table.head._2, true))
+    table.prepend(new TableEntry(0f, table.head.precision, true))
     table.toList
   }
 
@@ -78,18 +84,29 @@ class QueryResult(judge: CFCJudge, sh: Int = 10) {
     (x2 - x1) * (y3 - y1) / (x3 - x1) + y1
   }
 
-  override def toString = s"QueryResult(p5=$p5, p10=$p10, mrr=$mrr)"
+  override def toString = s"QueryResult(precision=$precision, recall=$recall, mrr=$mrr)"
 
   class StatsResult(val precision: Float, val recall: Float, val rank: Int) {
     override def toString = s"StatsResult(precision=$precision, recall=$recall, rank=$rank)"
   }
 }
 
+object QueryResult extends JsonSerializer[QueryResult] {
 
+  override def serialize(src: QueryResult, typeOfSrc: Type, context: JsonSerializationContext): JsonElement = {
+    val jo = new JsonObject
 
+    jo.addProperty("QueryID", src.qq.getQueryID)
+    jo.addProperty("precision", src.precision)
+    jo.addProperty("recall", src.recall)
+    jo.addProperty("MRR", src.mrr)
 
+    jo.add("PxRTable", context.serialize(src.genPRTable().toArray))
 
+    jo
+  }
 
+}
 
 
 

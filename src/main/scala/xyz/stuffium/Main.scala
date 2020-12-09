@@ -3,6 +3,7 @@ package xyz.stuffium
 import java.io.{IOException, PrintWriter}
 import java.nio.file.Paths
 
+import com.google.gson.GsonBuilder
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.analysis.standard.StandardAnalyzer
 import org.apache.lucene.benchmark.quality.utils.SubmissionReport
@@ -10,11 +11,11 @@ import org.apache.lucene.benchmark.quality.{QualityBenchmark, QualityQuery, Qual
 import org.apache.lucene.document.{Document, Field, StringField, TextField}
 import org.apache.lucene.index.{DirectoryReader, IndexWriter, IndexWriterConfig}
 import org.apache.lucene.queryparser.classic.QueryParser
-import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.search.similarities.BM25Similarity
+import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.store.MMapDirectory
 import xyz.stuffium.importer.CFCImporter
-import xyz.stuffium.metrics.{CFCJudge, QueryResult}
+import xyz.stuffium.metrics.{CFCJudge, ModelReport, QueryResult, TableEntry}
 import xyz.stuffium.utils.{CFCQualityQueryParser, VectorSimilarity}
 
 object Main extends LazyLogging {
@@ -32,6 +33,13 @@ object Main extends LazyLogging {
   val index_vector = new MMapDirectory(Paths.get("db", "vector"))
   val index_bm25 = new MMapDirectory(Paths.get("db", "bm25"))
 
+  val gson = new GsonBuilder()
+    .setPrettyPrinting()
+    .registerTypeHierarchyAdapter(classOf[ModelReport], ModelReport)
+    .registerTypeHierarchyAdapter(classOf[QueryResult], QueryResult)
+    .registerTypeHierarchyAdapter(classOf[TableEntry], TableEntry)
+    .create()
+
   def main(args: Array[String]): Unit = {
     logger.info("Warp 10, engage")
 
@@ -48,10 +56,7 @@ object Main extends LazyLogging {
     val sv = testVector(qqs.toArray, qqp, judge)
 //    val sp = testBM25(qqs.toArray, qqp, judge)
 
-    val qq = qqs(0)
-    val qr = new QueryResult(judge)
-    qr.process(sv(0))
-//    qr.results.foreach(println)
+    metrics.exportResults(sv, qqs, "vectorial", "report_vec.json")
 
     logger.info("Say goodbye Data")
   }
