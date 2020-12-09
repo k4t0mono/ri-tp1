@@ -29,7 +29,7 @@ object CFCImporter extends LazyLogging {
     val data = new ListBuffer[QueryHolder]
 
     cfc_queries.foreach(x => data.addAll(loadCFCQuery(s"./data/$x")))
-    logger.trace(s"Found ${data.length} queries")
+    logger.info(s"Found ${data.length} queries")
 
     val qqs = new ListBuffer[QualityQuery]
     val cjs = new ListBuffer[CFCJudgement]

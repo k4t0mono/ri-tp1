@@ -1,7 +1,9 @@
 package xyz.stuffium.metrics
 
 import java.io.PrintWriter
+import java.lang.reflect.Type
 
+import com.google.gson.{JsonElement, JsonObject, JsonSerializationContext, JsonSerializer}
 import org.apache.lucene.benchmark.quality.{Judge, QualityQuery}
 
 import scala.collection.mutable
@@ -20,6 +22,10 @@ class CFCJudge extends Judge {
     }
   }
 
+  def isRelevant(docName: Int, query: QualityQuery): Boolean = {
+    isRelevant(docName.toString, query)
+  }
+
   override def validateData(qq: Array[QualityQuery], logger: PrintWriter): Boolean = true
 
   override def maxRecall(query: QualityQuery): Int = {
@@ -27,5 +33,21 @@ class CFCJudge extends Judge {
       case Some(x) => x.maxRecall
       case None => 0
     }
+  }
+}
+
+object CFCJudge extends JsonSerializer[CFCJudge] {
+  override def serialize(src: CFCJudge, typeOfSrc: Type, context: JsonSerializationContext): JsonElement = {
+    val jo = new JsonObject
+
+    val juds = src
+      .judgements
+      .toList
+      .map(x => x._2)
+      .toArray
+
+    jo.add("queries", context.serialize(juds))
+
+    jo
   }
 }

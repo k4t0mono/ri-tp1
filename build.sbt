@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
   "org.apache.lucene" % "lucene-queryparser" % "8.7.0",
   "org.apache.lucene" % "lucene-benchmark" % "8.7.0",
 
+  "org.apache.opennlp" % "opennlp-tools" % "1.9.3",
 
-"org.apache.opennlp" % "opennlp-tools" % "1.9.3",
+  "com.google.code.gson" % "gson" % "2.8.6"
 )

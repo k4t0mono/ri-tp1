@@ -1,5 +1,8 @@
 package xyz.stuffium.metrics
 
+import java.lang.reflect.Type
+
+import com.google.gson.{JsonElement, JsonObject, JsonSerializationContext, JsonSerializer}
 import com.typesafe.scalalogging.LazyLogging
 import xyz.stuffium.importer.RelevantDocument
 
@@ -27,4 +30,24 @@ class CFCJudgement(queryID: String, relevantDocuments: List[RelevantDocument]) e
 
 
   override def toString = s"<CFCJudgement queryID=$queryID />"
+}
+
+object CFCJudgement extends JsonSerializer[CFCJudgement] {
+
+  override def serialize(src: CFCJudgement, typeOfSrc: Type, context: JsonSerializationContext): JsonElement = {
+    val jo = new JsonObject
+
+    val docs = src
+      .documents
+      .toList
+      .map(x => x._1)
+      .sorted
+      .toArray
+
+    jo.addProperty("id", src.queryID())
+    jo.add("documents", context.serialize(docs))
+
+    jo
+  }
+
 }

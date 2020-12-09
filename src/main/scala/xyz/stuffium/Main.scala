@@ -5,15 +5,17 @@ import java.nio.file.Paths
 
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.analysis.standard.StandardAnalyzer
+import org.apache.lucene.benchmark.quality.utils.SubmissionReport
 import org.apache.lucene.benchmark.quality.{QualityBenchmark, QualityQuery, QualityStats}
 import org.apache.lucene.document.{Document, Field, StringField, TextField}
 import org.apache.lucene.index.{DirectoryReader, IndexWriter, IndexWriterConfig}
-import org.apache.lucene.search.IndexSearcher
+import org.apache.lucene.queryparser.classic.QueryParser
+import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.search.similarities.BM25Similarity
 import org.apache.lucene.store.MMapDirectory
 import xyz.stuffium.importer.CFCImporter
 import xyz.stuffium.metrics.CFCJudge
-import xyz.stuffium.utils.{VectorSimilarity, CFCQualityQueryParser}
+import xyz.stuffium.utils.{CFCQualityQueryParser, VectorSimilarity}
 
 object Main extends LazyLogging {
 
@@ -23,7 +25,7 @@ object Main extends LazyLogging {
     .setLevel(ch.qos.logback.classic.Level.INFO)
 
   val analyzer: StandardAnalyzer = new StandardAnalyzer()
-  val hits = 100
+  val hits = 1300
   val fileNameField = "recordNumber"
   val textField = "text"
 
@@ -36,33 +38,51 @@ object Main extends LazyLogging {
     val (qqs, cjs) = CFCImporter.importCFQueries()
     val data = CFCImporter.importCFC()
 
-    storeVector(data)
-    storeBM25(data)
+//    storeVector(data)
+//    storeBM25(data)
 
     val judge = new CFCJudge
     judge.addJudgments(cjs)
     val qqp = new CFCQualityQueryParser(analyzer, textField)
 
     val sv = testVector(qqs.toArray, qqp, judge)
-    val sp = testBM25(qqs.toArray, qqp, judge)
+//    val sp = testBM25(qqs.toArray, qqp, judge)
+
+    val qq = qqs(42)
+    val qr = new QueryResult(judge)
+    qr.process(qq, searchVector(qq))
+    qr.results.foreach(println)
+
+
 
     logger.info("Say goodbye Data")
   }
 
-  def testVector(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): QualityStats = {
+  def searchVector(qq: QualityQuery): TopDocs = {
+    val is = getVectorSearcher
+    val q = new QueryParser(textField, analyzer).parse(qq.getValue("queryText"))
+
+    is.search(q, hits)
+  }
+
+  def testVector(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): List[QualityStats] = {
     val qrun = new QualityBenchmark(qqs, qqp, getVectorSearcher, fileNameField)
     val lg = new PrintWriter("log_vector")
     val stats = qrun.execute(judge, null, lg)
 
-    QualityStats.average(stats)
+    qrun.execute(null, new SubmissionReport(new PrintWriter("sr_vector"), "test"), lg)
+
+    stats.toList
   }
 
-  def testBM25(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): QualityStats = {
+  def testBM25(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): List[QualityStats] = {
     val qrun = new QualityBenchmark(qqs, qqp, getBM25Searcher, fileNameField)
     val lg = new PrintWriter("log_bm25")
     val stats = qrun.execute(judge, null, lg)
 
-    QualityStats.average(stats)
+    qrun.execute(null, new SubmissionReport(new PrintWriter("sr_bm25"), "test"), lg)
+
+    stats.toList
   }
 
   def getBM25Searcher: IndexSearcher = {
