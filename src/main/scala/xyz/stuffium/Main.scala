@@ -14,7 +14,7 @@ import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.search.similarities.BM25Similarity
 import org.apache.lucene.store.MMapDirectory
 import xyz.stuffium.importer.CFCImporter
-import xyz.stuffium.metrics.CFCJudge
+import xyz.stuffium.metrics.{CFCJudge, QueryResult}
 import xyz.stuffium.utils.{CFCQualityQueryParser, VectorSimilarity}
 
 object Main extends LazyLogging {
@@ -48,12 +48,10 @@ object Main extends LazyLogging {
     val sv = testVector(qqs.toArray, qqp, judge)
 //    val sp = testBM25(qqs.toArray, qqp, judge)
 
-    val qq = qqs(42)
+    val qq = qqs(0)
     val qr = new QueryResult(judge)
-    qr.process(qq, searchVector(qq))
-    qr.results.foreach(println)
-
-
+    qr.process(sv(0))
+//    qr.results.foreach(println)
 
     logger.info("Say goodbye Data")
   }
