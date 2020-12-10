@@ -46,17 +46,18 @@ object Main extends LazyLogging {
     val (qqs, cjs) = CFCImporter.importCFQueries()
     val data = CFCImporter.importCFC()
 
-//    storeVector(data)
-//    storeBM25(data)
+    storeVector(data)
+    storeBM25(data)
 
     val judge = new CFCJudge
     judge.addJudgments(cjs)
     val qqp = new CFCQualityQueryParser(analyzer, textField)
 
     val sv = testVector(qqs.toArray, qqp, judge)
-//    val sp = testBM25(qqs.toArray, qqp, judge)
+    val sp = testBM25(qqs.toArray, qqp, judge)
 
     metrics.exportResults(sv, qqs, "vectorial", "report_vec.json")
+    metrics.exportResults(sp, qqs, "bm25", "report_bm25.json")
 
     logger.info("Say goodbye Data")
   }
@@ -69,6 +70,7 @@ object Main extends LazyLogging {
   }
 
   def testVector(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): List[QualityStats] = {
+    logger.info("Testing the vectorial model")
     val qrun = new QualityBenchmark(qqs, qqp, getVectorSearcher, fileNameField)
     val lg = new PrintWriter("log_vector")
     val stats = qrun.execute(judge, null, lg)
@@ -79,6 +81,7 @@ object Main extends LazyLogging {
   }
 
   def testBM25(qqs: Array[QualityQuery], qqp: CFCQualityQueryParser, judge: CFCJudge): List[QualityStats] = {
+    logger.info("Testing the BM25 model")
     val qrun = new QualityBenchmark(qqs, qqp, getBM25Searcher, fileNameField)
     val lg = new PrintWriter("log_bm25")
     val stats = qrun.execute(judge, null, lg)

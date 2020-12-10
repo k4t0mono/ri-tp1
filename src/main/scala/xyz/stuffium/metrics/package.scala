@@ -2,11 +2,13 @@ package xyz.stuffium
 
 import java.io.{BufferedWriter, File, FileWriter}
 
+import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.benchmark.quality.{QualityQuery, QualityStats}
 
-package object metrics {
+package object metrics extends LazyLogging {
 
   def exportResults(qss: List[QualityStats], qqs: List[QualityQuery], model: String, path: String): Unit = {
+    logger.info(s"Exporting results of the model ${model} to the file ${path}")
     val qrs = qss
       .zip(qqs)
       .map(x => {

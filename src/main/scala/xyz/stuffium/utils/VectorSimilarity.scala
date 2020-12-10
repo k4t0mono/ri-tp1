@@ -5,13 +5,15 @@ import org.apache.lucene.search.similarities.TFIDFSimilarity
 import scala.math.log
 
 class VectorSimilarity extends TFIDFSimilarity {
+
   override def tf(freq: Float): Float = {
-    log(1 + freq).toFloat
+    1f + log(freq).toFloat
   }
 
   override def idf(docFreq: Long, docCount: Long): Float = {
-    log(1 + (docCount - docFreq + 0.5)/(docFreq + 0.5)).toFloat
+    log(1 + docCount/docFreq).toFloat
   }
 
   override def lengthNorm(length: Int): Float = log(length).toFloat
+
 }
