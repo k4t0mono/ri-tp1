@@ -3,7 +3,7 @@ package xyz.stuffium
 import java.io.{IOException, PrintWriter}
 import java.nio.file.Paths
 
-import com.google.gson.GsonBuilder
+import com.google.gson.{Gson, GsonBuilder}
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.lucene.analysis.standard.StandardAnalyzer
 import org.apache.lucene.benchmark.quality.utils.SubmissionReport
@@ -15,7 +15,7 @@ import org.apache.lucene.search.similarities.BM25Similarity
 import org.apache.lucene.search.{IndexSearcher, TopDocs}
 import org.apache.lucene.store.MMapDirectory
 import xyz.stuffium.importer.CFCImporter
-import xyz.stuffium.metrics.{CFCJudge, ModelReport, QueryResult, TableEntry}
+import xyz.stuffium.metrics.{CFCJudge, ModelReport, QueryResult, RPReport, TableEntry}
 import xyz.stuffium.utils.{CFCQualityQueryParser, VectorSimilarity}
 
 object Main extends LazyLogging {
@@ -33,11 +33,12 @@ object Main extends LazyLogging {
   val index_vector = new MMapDirectory(Paths.get("db", "vector"))
   val index_bm25 = new MMapDirectory(Paths.get("db", "bm25"))
 
-  val gson = new GsonBuilder()
+  val gson: Gson = new GsonBuilder()
     .setPrettyPrinting()
     .registerTypeHierarchyAdapter(classOf[ModelReport], ModelReport)
     .registerTypeHierarchyAdapter(classOf[QueryResult], QueryResult)
     .registerTypeHierarchyAdapter(classOf[TableEntry], TableEntry)
+    .registerTypeHierarchyAdapter(classOf[RPReport], RPReport)
     .create()
 
   def main(args: Array[String]): Unit = {
@@ -46,18 +47,24 @@ object Main extends LazyLogging {
     val (qqs, cjs) = CFCImporter.importCFQueries()
     val data = CFCImporter.importCFC()
 
-    storeVector(data)
-    storeBM25(data)
+//    storeVector(data)
+//    storeBM25(data)
 
     val judge = new CFCJudge
     judge.addJudgments(cjs)
     val qqp = new CFCQualityQueryParser(analyzer, textField)
 
     val sv = testVector(qqs.toArray, qqp, judge)
-    val sp = testBM25(qqs.toArray, qqp, judge)
+    val mrv = metrics.getModelReport(sv, qqs, "vectorial")
 
-    metrics.exportResults(sv, qqs, "vectorial", "report_vec.json")
-    metrics.exportResults(sp, qqs, "bm25", "report_bm25.json")
+    val sp = testBM25(qqs.toArray, qqp, judge)
+    val mrp = metrics.getModelReport(sp, qqs, "bm25")
+
+    metrics.exportModelReport(mrv, "report_vec.json")
+    metrics.exportModelReport(mrp, "report_bm25.json")
+
+    val rpr = metrics.getRPModels(mrv, mrp)
+    metrics.exportRPReport(rpr, "rp_report.json")
 
     logger.info("Say goodbye Data")
   }

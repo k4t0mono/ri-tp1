@@ -12,6 +12,7 @@ class QueryResult(val qq: QualityQuery, sh: Int = 10) {
   val results = new ListBuffer[StatsResult]
   var precision, recall = 0f
   var mrr = 0f
+  var rp = 0f
 
   def process(stats: QualityStats): Unit = {
     stats.getRecallPoints.foreach(x => {
@@ -23,6 +24,7 @@ class QueryResult(val qq: QualityQuery, sh: Int = 10) {
     precision = results.last.precision
     recall = results.last.recall
 
+    calcRP(stats)
     calcMrr(sh)
   }
 
@@ -80,6 +82,18 @@ class QueryResult(val qq: QualityQuery, sh: Int = 10) {
     }
   }
 
+  def calcRP(qs: QualityStats): Unit = {
+    val n = qs
+      .getRecallPoints
+      .filter(x => x.getRank <= qs.getMaxGoodPoints)
+      .last
+      .getRecall
+      .toFloat
+
+    rp = n / qs.getMaxGoodPoints.toFloat
+  }
+
+
   def interpolate(x1: Float, y1: Float, x3: Float, y3: Float, x2: Float): Float = {
     (x2 - x1) * (y3 - y1) / (x3 - x1) + y1
   }
@@ -97,8 +111,9 @@ object QueryResult extends JsonSerializer[QueryResult] {
     val jo = new JsonObject
 
     jo.addProperty("QueryID", src.qq.getQueryID)
-    jo.addProperty("precision", src.precision)
-    jo.addProperty("recall", src.recall)
+    jo.addProperty("Precision", src.precision)
+    jo.addProperty("Recall", src.recall)
+    jo.addProperty("RPrecision", src.rp)
     jo.addProperty("MRR", src.mrr)
 
     jo.add("PxRTable", context.serialize(src.genPRTable().toArray))
@@ -107,21 +122,3 @@ object QueryResult extends JsonSerializer[QueryResult] {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -7,8 +7,23 @@ import org.apache.lucene.benchmark.quality.{QualityQuery, QualityStats}
 
 package object metrics extends LazyLogging {
 
-  def exportResults(qss: List[QualityStats], qqs: List[QualityQuery], model: String, path: String): Unit = {
-    logger.info(s"Exporting results of the model ${model} to the file ${path}")
+  def getRPModels(mr1: ModelReport, mr2: ModelReport): RPReport = {
+    val results = mr1
+      .results
+      .zip(mr2.results)
+      .map(x => x._1.rp - x._2.rp)
+
+    new RPReport(mr1.model, mr2.model, results)
+  }
+
+  def exportRPReport(rpr: RPReport, path: String): Unit = {
+    logger.info(s"Exporting R-Precision Report")
+
+    val s = Main.gson.toJson(rpr)
+    writeFile(path, s)
+  }
+
+  def getModelReport(qss: List[QualityStats], qqs: List[QualityQuery], model: String): ModelReport = {
     val qrs = qss
       .zip(qqs)
       .map(x => {
@@ -21,7 +36,12 @@ package object metrics extends LazyLogging {
     val qs = QualityStats.average(qss.toArray)
     val mrr = qrs.map(x => x.mrr).sum / qrs.length
 
-    val mr = new ModelReport(model, qrs, qs.getPrecisionAt(5).toFloat, qs.getPrecisionAt(10).toFloat, mrr)
+    new ModelReport(model, qrs, qs.getPrecisionAt(5).toFloat, qs.getPrecisionAt(10).toFloat, mrr)
+  }
+
+  def exportModelReport(mr: ModelReport, path: String): Unit = {
+    logger.info(s"Exporting results of the model ${mr.model} to the file $path")
+
     val s = Main.gson.toJson(mr)
     writeFile(path, s)
   }
@@ -32,4 +52,5 @@ package object metrics extends LazyLogging {
     bw.write(s)
     bw.close()
   }
+
 }

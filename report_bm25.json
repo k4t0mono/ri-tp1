@@ -6,8 +6,9 @@
   "queries": [
     {
       "QueryID": "1",
-      "precision": 0.050080776,
-      "recall": 0.9117647,
+      "Precision": 0.050080776,
+      "Recall": 0.9117647,
+      "RPrecision": 0.3529412,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -69,8 +70,9 @@
     },
     {
       "QueryID": "2",
-      "precision": 0.008720931,
-      "recall": 0.85714287,
+      "Precision": 0.008720931,
+      "Recall": 0.85714287,
+      "RPrecision": 0.2857143,
       "MRR": 0.33333334,
       "PxRTable": [
         {
@@ -127,8 +129,9 @@
     },
     {
       "QueryID": "3",
-      "precision": 0.042042043,
-      "recall": 0.9767442,
+      "Precision": 0.042042043,
+      "Recall": 0.9767442,
+      "RPrecision": 0.20930232,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -190,8 +193,9 @@
     },
     {
       "QueryID": "4",
-      "precision": 0.027439024,
-      "recall": 1.0,
+      "Precision": 0.027439024,
+      "Recall": 1.0,
+      "RPrecision": 0.33333334,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -248,8 +252,9 @@
     },
     {
       "QueryID": "5",
-      "precision": 0.15612648,
-      "recall": 0.60305345,
+      "Precision": 0.15612648,
+      "Recall": 0.60305345,
+      "RPrecision": 0.35877863,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -311,8 +316,9 @@
     },
     {
       "QueryID": "6",
-      "precision": 0.026815642,
-      "recall": 1.0,
+      "Precision": 0.026815642,
+      "Recall": 1.0,
+      "RPrecision": 0.41666666,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -374,8 +380,9 @@
     },
     {
       "QueryID": "7",
-      "precision": 0.030456852,
-      "recall": 0.85714287,
+      "Precision": 0.030456852,
+      "Recall": 0.85714287,
+      "RPrecision": 0.17857143,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -437,8 +444,9 @@
     },
     {
       "QueryID": "8",
-      "precision": 0.026798308,
-      "recall": 0.8636364,
+      "Precision": 0.026798308,
+      "Recall": 0.8636364,
+      "RPrecision": 0.09090909,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -500,8 +508,9 @@
     },
     {
       "QueryID": "9",
-      "precision": 0.015948962,
-      "recall": 1.0,
+      "Precision": 0.015948962,
+      "Recall": 1.0,
+      "RPrecision": 0.2,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -563,8 +572,9 @@
     },
     {
       "QueryID": "10",
-      "precision": 0.026578072,
-      "recall": 0.96,
+      "Precision": 0.026578072,
+      "Recall": 0.96,
+      "RPrecision": 0.52,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -626,8 +636,9 @@
     },
     {
       "QueryID": "11",
-      "precision": 0.1875,
-      "recall": 0.8181818,
+      "Precision": 0.1875,
+      "Recall": 0.8181818,
+      "RPrecision": 0.6363636,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -689,8 +700,9 @@
     },
     {
       "QueryID": "12",
-      "precision": 0.010086455,
-      "recall": 1.0,
+      "Precision": 0.010086455,
+      "Recall": 1.0,
+      "RPrecision": 0.14285715,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -747,8 +759,9 @@
     },
     {
       "QueryID": "13",
-      "precision": 0.022826087,
-      "recall": 0.875,
+      "Precision": 0.022826087,
+      "Recall": 0.875,
+      "RPrecision": 0.25,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -810,8 +823,9 @@
     },
     {
       "QueryID": "14",
-      "precision": 0.0513347,
-      "recall": 0.90909094,
+      "Precision": 0.0513347,
+      "Recall": 0.90909094,
+      "RPrecision": 0.27272728,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -873,8 +887,9 @@
     },
     {
       "QueryID": "15",
-      "precision": 0.11460674,
-      "recall": 0.4903846,
+      "Precision": 0.11460674,
+      "Recall": 0.4903846,
+      "RPrecision": 0.29807693,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -936,8 +951,9 @@
     },
     {
       "QueryID": "16",
-      "precision": 0.17987421,
-      "recall": 0.79444444,
+      "Precision": 0.17987421,
+      "Recall": 0.79444444,
+      "RPrecision": 0.2888889,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -999,8 +1015,9 @@
     },
     {
       "QueryID": "17",
-      "precision": 0.052137643,
-      "recall": 0.90909094,
+      "Precision": 0.052137643,
+      "Recall": 0.90909094,
+      "RPrecision": 0.2,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1062,8 +1079,9 @@
     },
     {
       "QueryID": "18",
-      "precision": 0.024110219,
-      "recall": 1.0,
+      "Precision": 0.024110219,
+      "Recall": 1.0,
+      "RPrecision": 0.42857143,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1125,8 +1143,9 @@
     },
     {
       "QueryID": "19",
-      "precision": 0.026927784,
-      "recall": 1.0,
+      "Precision": 0.026927784,
+      "Recall": 1.0,
+      "RPrecision": 0.18181819,
       "MRR": 0.16666667,
       "PxRTable": [
         {
@@ -1188,8 +1207,9 @@
     },
     {
       "QueryID": "20",
-      "precision": 0.04560623,
-      "recall": 0.8913044,
+      "Precision": 0.04560623,
+      "Recall": 0.8913044,
+      "RPrecision": 0.5217391,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1251,8 +1271,9 @@
     },
     {
       "QueryID": "21",
-      "precision": 0.019417476,
-      "recall": 0.72,
+      "Precision": 0.019417476,
+      "Recall": 0.72,
+      "RPrecision": 0.2,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1314,8 +1335,9 @@
     },
     {
       "QueryID": "22",
-      "precision": 0.086538464,
-      "recall": 0.51428574,
+      "Precision": 0.086538464,
+      "Recall": 0.51428574,
+      "RPrecision": 0.27142859,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1377,8 +1399,9 @@
     },
     {
       "QueryID": "23",
-      "precision": 0.03642384,
-      "recall": 0.62857145,
+      "Precision": 0.03642384,
+      "Recall": 0.62857145,
+      "RPrecision": 0.114285715,
       "MRR": 0.1,
       "PxRTable": [
         {
@@ -1440,8 +1463,9 @@
     },
     {
       "QueryID": "24",
-      "precision": 0.028503563,
-      "recall": 0.7741935,
+      "Precision": 0.028503563,
+      "Recall": 0.7741935,
+      "RPrecision": 0.16129032,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1503,8 +1527,9 @@
     },
     {
       "QueryID": "25",
-      "precision": 0.06303725,
-      "recall": 0.8627451,
+      "Precision": 0.06303725,
+      "Recall": 0.8627451,
+      "RPrecision": 0.27450982,
       "MRR": 0.25,
       "PxRTable": [
         {
@@ -1566,8 +1591,9 @@
     },
     {
       "QueryID": "26",
-      "precision": 0.06266318,
-      "recall": 0.72727275,
+      "Precision": 0.06266318,
+      "Recall": 0.72727275,
+      "RPrecision": 0.3939394,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1629,8 +1655,9 @@
     },
     {
       "QueryID": "27",
-      "precision": 0.013582343,
-      "recall": 0.72727275,
+      "Precision": 0.013582343,
+      "Recall": 0.72727275,
+      "RPrecision": 0.27272728,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1692,8 +1719,9 @@
     },
     {
       "QueryID": "28",
-      "precision": 0.052069426,
-      "recall": 0.7647059,
+      "Precision": 0.052069426,
+      "Recall": 0.7647059,
+      "RPrecision": 0.1764706,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -1755,8 +1783,9 @@
     },
     {
       "QueryID": "29",
-      "precision": 0.05035971,
-      "recall": 0.95454544,
+      "Precision": 0.05035971,
+      "Recall": 0.95454544,
+      "RPrecision": 0.09090909,
       "MRR": 0.125,
       "PxRTable": [
         {
@@ -1818,8 +1847,9 @@
     },
     {
       "QueryID": "30",
-      "precision": 0.016209476,
-      "recall": 0.7647059,
+      "Precision": 0.016209476,
+      "Recall": 0.7647059,
+      "RPrecision": 0.47058824,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -1881,8 +1911,9 @@
     },
     {
       "QueryID": "31",
-      "precision": 0.048478015,
-      "recall": 0.7413793,
+      "Precision": 0.048478015,
+      "Recall": 0.7413793,
+      "RPrecision": 0.27586207,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -1944,8 +1975,9 @@
     },
     {
       "QueryID": "32",
-      "precision": 0.029579068,
-      "recall": 0.8666667,
+      "Precision": 0.029579068,
+      "Recall": 0.8666667,
+      "RPrecision": 0.16666667,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2007,8 +2039,9 @@
     },
     {
       "QueryID": "33",
-      "precision": 0.125,
-      "recall": 0.8245614,
+      "Precision": 0.125,
+      "Recall": 0.8245614,
+      "RPrecision": 0.4385965,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2070,8 +2103,9 @@
     },
     {
       "QueryID": "34",
-      "precision": 0.07971015,
-      "recall": 0.84615386,
+      "Precision": 0.07971015,
+      "Recall": 0.84615386,
+      "RPrecision": 0.46153846,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2133,8 +2167,9 @@
     },
     {
       "QueryID": "35",
-      "precision": 0.033557046,
-      "recall": 0.71428573,
+      "Precision": 0.033557046,
+      "Recall": 0.71428573,
+      "RPrecision": 0.35714287,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2196,8 +2231,9 @@
     },
     {
       "QueryID": "36",
-      "precision": 0.026086956,
-      "recall": 1.0,
+      "Precision": 0.026086956,
+      "Recall": 1.0,
+      "RPrecision": 0.33333334,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -2254,8 +2290,9 @@
     },
     {
       "QueryID": "37",
-      "precision": 0.119887166,
-      "recall": 0.86734694,
+      "Precision": 0.119887166,
+      "Recall": 0.86734694,
+      "RPrecision": 0.48979592,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2317,8 +2354,9 @@
     },
     {
       "QueryID": "38",
-      "precision": 0.049411766,
-      "recall": 0.3962264,
+      "Precision": 0.049411766,
+      "Recall": 0.3962264,
+      "RPrecision": 0.11320755,
       "MRR": 0.33333334,
       "PxRTable": [
         {
@@ -2380,8 +2418,9 @@
     },
     {
       "QueryID": "39",
-      "precision": 0.17727272,
-      "recall": 0.7222222,
+      "Precision": 0.17727272,
+      "Recall": 0.7222222,
+      "RPrecision": 0.37037036,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -2443,8 +2482,9 @@
     },
     {
       "QueryID": "40",
-      "precision": 0.14133017,
-      "recall": 0.8150685,
+      "Precision": 0.14133017,
+      "Recall": 0.8150685,
+      "RPrecision": 0.24657534,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2506,8 +2546,9 @@
     },
     {
       "QueryID": "41",
-      "precision": 0.015069968,
-      "recall": 0.93333334,
+      "Precision": 0.015069968,
+      "Recall": 0.93333334,
+      "RPrecision": 0.26666668,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2569,8 +2610,9 @@
     },
     {
       "QueryID": "42",
-      "precision": 0.046038546,
-      "recall": 0.9148936,
+      "Precision": 0.046038546,
+      "Recall": 0.9148936,
+      "RPrecision": 0.25531915,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2632,8 +2674,9 @@
     },
     {
       "QueryID": "43",
-      "precision": 0.14808363,
-      "recall": 0.86734694,
+      "Precision": 0.14808363,
+      "Recall": 0.86734694,
+      "RPrecision": 0.35714287,
       "MRR": 0.2,
       "PxRTable": [
         {
@@ -2695,8 +2738,9 @@
     },
     {
       "QueryID": "44",
-      "precision": 0.14472252,
-      "recall": 0.95,
+      "Precision": 0.14472252,
+      "Recall": 0.95,
+      "RPrecision": 0.55714285,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -2758,8 +2802,9 @@
     },
     {
       "QueryID": "45",
-      "precision": 0.02486911,
-      "recall": 0.95,
+      "Precision": 0.02486911,
+      "Recall": 0.95,
+      "RPrecision": 0.25,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2821,8 +2866,9 @@
     },
     {
       "QueryID": "46",
-      "precision": 0.015837105,
-      "recall": 0.7777778,
+      "Precision": 0.015837105,
+      "Recall": 0.7777778,
+      "RPrecision": 0.22222222,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -2884,8 +2930,9 @@
     },
     {
       "QueryID": "47",
-      "precision": 0.05751766,
-      "recall": 0.95,
+      "Precision": 0.05751766,
+      "Recall": 0.95,
+      "RPrecision": 0.13333334,
       "MRR": 0.33333334,
       "PxRTable": [
         {
@@ -2947,8 +2994,9 @@
     },
     {
       "QueryID": "48",
-      "precision": 0.041493777,
-      "recall": 1.0,
+      "Precision": 0.041493777,
+      "Recall": 1.0,
+      "RPrecision": 0.3,
       "MRR": 0.16666667,
       "PxRTable": [
         {
@@ -3010,8 +3058,9 @@
     },
     {
       "QueryID": "49",
-      "precision": 0.037273694,
-      "recall": 0.9722222,
+      "Precision": 0.037273694,
+      "Recall": 0.9722222,
+      "RPrecision": 0.3888889,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3073,8 +3122,9 @@
     },
     {
       "QueryID": "50",
-      "precision": 0.028255528,
-      "recall": 0.92,
+      "Precision": 0.028255528,
+      "Recall": 0.92,
+      "RPrecision": 0.24,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3136,8 +3186,9 @@
     },
     {
       "QueryID": "51",
-      "precision": 0.218,
-      "recall": 0.9045643,
+      "Precision": 0.218,
+      "Recall": 0.9045643,
+      "RPrecision": 0.30705395,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3199,8 +3250,9 @@
     },
     {
       "QueryID": "52",
-      "precision": 0.0025477707,
-      "recall": 1.0,
+      "Precision": 0.0025477707,
+      "Recall": 1.0,
+      "RPrecision": 0.5,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3242,8 +3294,9 @@
     },
     {
       "QueryID": "53",
-      "precision": 0.027878787,
-      "recall": 1.0,
+      "Precision": 0.027878787,
+      "Recall": 1.0,
+      "RPrecision": 0.3478261,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3305,8 +3358,9 @@
     },
     {
       "QueryID": "54",
-      "precision": 0.061780106,
-      "recall": 0.9516129,
+      "Precision": 0.061780106,
+      "Recall": 0.9516129,
+      "RPrecision": 0.5322581,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3368,8 +3422,9 @@
     },
     {
       "QueryID": "55",
-      "precision": 0.024663677,
-      "recall": 0.9166667,
+      "Precision": 0.024663677,
+      "Recall": 0.9166667,
+      "RPrecision": 0.041666668,
       "MRR": 0.1,
       "PxRTable": [
         {
@@ -3431,8 +3486,9 @@
     },
     {
       "QueryID": "56",
-      "precision": 0.03501094,
-      "recall": 1.0,
+      "Precision": 0.03501094,
+      "Recall": 1.0,
+      "RPrecision": 0.125,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3494,8 +3550,9 @@
     },
     {
       "QueryID": "57",
-      "precision": 0.06781915,
-      "recall": 1.0,
+      "Precision": 0.06781915,
+      "Recall": 1.0,
+      "RPrecision": 0.5294118,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3557,8 +3614,9 @@
     },
     {
       "QueryID": "58",
-      "precision": 0.10440835,
-      "recall": 0.94736844,
+      "Precision": 0.10440835,
+      "Recall": 0.94736844,
+      "RPrecision": 0.4,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3620,8 +3678,9 @@
     },
     {
       "QueryID": "59",
-      "precision": 0.13559322,
-      "recall": 0.8827586,
+      "Precision": 0.13559322,
+      "Recall": 0.8827586,
+      "RPrecision": 0.15862069,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -3683,8 +3742,9 @@
     },
     {
       "QueryID": "60",
-      "precision": 0.04121864,
-      "recall": 0.6764706,
+      "Precision": 0.04121864,
+      "Recall": 0.6764706,
+      "RPrecision": 0.0882353,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3746,8 +3806,9 @@
     },
     {
       "QueryID": "61",
-      "precision": 0.06352683,
-      "recall": 0.82857144,
+      "Precision": 0.06352683,
+      "Recall": 0.82857144,
+      "RPrecision": 0.32857144,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3809,8 +3870,9 @@
     },
     {
       "QueryID": "62",
-      "precision": 0.1377184,
-      "recall": 0.9305556,
+      "Precision": 0.1377184,
+      "Recall": 0.9305556,
+      "RPrecision": 0.29166666,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3872,8 +3934,9 @@
     },
     {
       "QueryID": "63",
-      "precision": 0.03329634,
-      "recall": 0.7692308,
+      "Precision": 0.03329634,
+      "Recall": 0.7692308,
+      "RPrecision": 0.12820514,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -3935,8 +3998,9 @@
     },
     {
       "QueryID": "64",
-      "precision": 0.05620609,
-      "recall": 0.96,
+      "Precision": 0.05620609,
+      "Recall": 0.96,
+      "RPrecision": 0.2,
       "MRR": 0.1,
       "PxRTable": [
         {
@@ -3998,8 +4062,9 @@
     },
     {
       "QueryID": "65",
-      "precision": 0.091772154,
-      "recall": 0.9255319,
+      "Precision": 0.091772154,
+      "Recall": 0.9255319,
+      "RPrecision": 0.30851063,
       "MRR": 0.33333334,
       "PxRTable": [
         {
@@ -4061,8 +4126,9 @@
     },
     {
       "QueryID": "66",
-      "precision": 0.056642637,
-      "recall": 0.8730159,
+      "Precision": 0.056642637,
+      "Recall": 0.8730159,
+      "RPrecision": 0.20634921,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -4124,8 +4190,9 @@
     },
     {
       "QueryID": "67",
-      "precision": 0.022887323,
-      "recall": 0.9285714,
+      "Precision": 0.022887323,
+      "Recall": 0.9285714,
+      "RPrecision": 0.2857143,
       "MRR": 0.25,
       "PxRTable": [
         {
@@ -4187,8 +4254,9 @@
     },
     {
       "QueryID": "68",
-      "precision": 0.048478015,
-      "recall": 0.95555556,
+      "Precision": 0.048478015,
+      "Recall": 0.95555556,
+      "RPrecision": 0.044444446,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4250,8 +4318,9 @@
     },
     {
       "QueryID": "69",
-      "precision": 0.020725388,
-      "recall": 0.8,
+      "Precision": 0.020725388,
+      "Recall": 0.8,
+      "RPrecision": 0.33333334,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -4313,8 +4382,9 @@
     },
     {
       "QueryID": "70",
-      "precision": 0.025222551,
-      "recall": 1.0,
+      "Precision": 0.025222551,
+      "Recall": 1.0,
+      "RPrecision": 0.5294118,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4376,8 +4446,9 @@
     },
     {
       "QueryID": "71",
-      "precision": 0.0069444445,
-      "recall": 1.0,
+      "Precision": 0.0069444445,
+      "Recall": 1.0,
+      "RPrecision": 0.5,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4434,8 +4505,9 @@
     },
     {
       "QueryID": "72",
-      "precision": 0.05284553,
-      "recall": 1.0,
+      "Precision": 0.05284553,
+      "Recall": 1.0,
+      "RPrecision": 0.46153846,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -4497,8 +4569,9 @@
     },
     {
       "QueryID": "73",
-      "precision": 0.01953602,
-      "recall": 0.8888889,
+      "Precision": 0.01953602,
+      "Recall": 0.8888889,
+      "RPrecision": 0.44444445,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4560,8 +4633,9 @@
     },
     {
       "QueryID": "74",
-      "precision": 0.008720931,
-      "recall": 0.85714287,
+      "Precision": 0.008720931,
+      "Recall": 0.85714287,
+      "RPrecision": 0.2857143,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4618,8 +4692,9 @@
     },
     {
       "QueryID": "75",
-      "precision": 0.023809524,
-      "recall": 0.95238096,
+      "Precision": 0.023809524,
+      "Recall": 0.95238096,
+      "RPrecision": 0.47619048,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4681,8 +4756,9 @@
     },
     {
       "QueryID": "76",
-      "precision": 0.013667426,
-      "recall": 0.7058824,
+      "Precision": 0.013667426,
+      "Recall": 0.7058824,
+      "RPrecision": 0.29411766,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4744,8 +4820,9 @@
     },
     {
       "QueryID": "77",
-      "precision": 0.07181719,
-      "recall": 0.80487806,
+      "Precision": 0.07181719,
+      "Recall": 0.80487806,
+      "RPrecision": 0.15853658,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4807,8 +4884,9 @@
     },
     {
       "QueryID": "78",
-      "precision": 0.07403545,
-      "recall": 0.9220779,
+      "Precision": 0.07403545,
+      "Recall": 0.9220779,
+      "RPrecision": 0.41558442,
       "MRR": 0.14285715,
       "PxRTable": [
         {
@@ -4870,8 +4948,9 @@
     },
     {
       "QueryID": "79",
-      "precision": 0.045454547,
-      "recall": 0.9302326,
+      "Precision": 0.045454547,
+      "Recall": 0.9302326,
+      "RPrecision": 0.20930232,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4933,8 +5012,9 @@
     },
     {
       "QueryID": "80",
-      "precision": 0.0794702,
-      "recall": 0.7058824,
+      "Precision": 0.0794702,
+      "Recall": 0.7058824,
+      "RPrecision": 0.38235295,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -4996,8 +5076,9 @@
     },
     {
       "QueryID": "81",
-      "precision": 0.029411765,
-      "recall": 0.96428573,
+      "Precision": 0.029411765,
+      "Recall": 0.96428573,
+      "RPrecision": 0.25,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5059,8 +5140,9 @@
     },
     {
       "QueryID": "82",
-      "precision": 0.06465517,
-      "recall": 0.9677419,
+      "Precision": 0.06465517,
+      "Recall": 0.9677419,
+      "RPrecision": 0.27419356,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -5122,8 +5204,9 @@
     },
     {
       "QueryID": "83",
-      "precision": 0.033195022,
-      "recall": 1.0,
+      "Precision": 0.033195022,
+      "Recall": 1.0,
+      "RPrecision": 0.28125,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5185,8 +5268,9 @@
     },
     {
       "QueryID": "84",
-      "precision": 0.021645023,
-      "recall": 0.9375,
+      "Precision": 0.021645023,
+      "Recall": 0.9375,
+      "RPrecision": 0.4375,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -5248,8 +5332,9 @@
     },
     {
       "QueryID": "85",
-      "precision": 0.028784648,
-      "recall": 0.87096775,
+      "Precision": 0.028784648,
+      "Recall": 0.87096775,
+      "RPrecision": 0.12903225,
       "MRR": 0.25,
       "PxRTable": [
         {
@@ -5311,8 +5396,9 @@
     },
     {
       "QueryID": "86",
-      "precision": 0.050592035,
-      "recall": 1.0,
+      "Precision": 0.050592035,
+      "Recall": 1.0,
+      "RPrecision": 0.34042552,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -5374,8 +5460,9 @@
     },
     {
       "QueryID": "87",
-      "precision": 0.04,
-      "recall": 1.0,
+      "Precision": 0.04,
+      "Recall": 1.0,
+      "RPrecision": 0.13157895,
       "MRR": 0.2,
       "PxRTable": [
         {
@@ -5437,8 +5524,9 @@
     },
     {
       "QueryID": "88",
-      "precision": 0.013924051,
-      "recall": 0.78571427,
+      "Precision": 0.013924051,
+      "Recall": 0.78571427,
+      "RPrecision": 0.21428572,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5500,8 +5588,9 @@
     },
     {
       "QueryID": "89",
-      "precision": 0.020286396,
-      "recall": 1.0,
+      "Precision": 0.020286396,
+      "Recall": 1.0,
+      "RPrecision": 0.4117647,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5563,8 +5652,9 @@
     },
     {
       "QueryID": "90",
-      "precision": 0.059471365,
-      "recall": 0.96428573,
+      "Precision": 0.059471365,
+      "Recall": 0.96428573,
+      "RPrecision": 0.53571427,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5626,8 +5716,9 @@
     },
     {
       "QueryID": "91",
-      "precision": 0.25373134,
-      "recall": 0.67105263,
+      "Precision": 0.25373134,
+      "Recall": 0.67105263,
+      "RPrecision": 0.3026316,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -5689,8 +5780,9 @@
     },
     {
       "QueryID": "92",
-      "precision": 0.10628571,
-      "recall": 0.8611111,
+      "Precision": 0.10628571,
+      "Recall": 0.8611111,
+      "RPrecision": 0.35185185,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5752,8 +5844,9 @@
     },
     {
       "QueryID": "93",
-      "precision": 0.020481927,
-      "recall": 0.9444444,
+      "Precision": 0.020481927,
+      "Recall": 0.9444444,
+      "RPrecision": 0.22222222,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5815,8 +5908,9 @@
     },
     {
       "QueryID": "94",
-      "precision": 0.08033827,
-      "recall": 0.88372093,
+      "Precision": 0.08033827,
+      "Recall": 0.88372093,
+      "RPrecision": 0.25581396,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -5878,8 +5972,9 @@
     },
     {
       "QueryID": "95",
-      "precision": 0.0069124424,
-      "recall": 0.6666667,
+      "Precision": 0.0069124424,
+      "Recall": 0.6666667,
+      "RPrecision": 0.33333334,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5936,8 +6031,9 @@
     },
     {
       "QueryID": "96",
-      "precision": 0.015759312,
-      "recall": 0.9166667,
+      "Precision": 0.015759312,
+      "Recall": 0.9166667,
+      "RPrecision": 0.25,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -5999,8 +6095,9 @@
     },
     {
       "QueryID": "97",
-      "precision": 0.012805588,
-      "recall": 1.0,
+      "Precision": 0.012805588,
+      "Recall": 1.0,
+      "RPrecision": 0.36363637,
       "MRR": 0.5,
       "PxRTable": [
         {
@@ -6062,8 +6159,9 @@
     },
     {
       "QueryID": "98",
-      "precision": 0.018835617,
-      "recall": 0.73333335,
+      "Precision": 0.018835617,
+      "Recall": 0.73333335,
+      "RPrecision": 0.2,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -6125,8 +6223,9 @@
     },
     {
       "QueryID": "99",
-      "precision": 0.008741259,
-      "recall": 1.0,
+      "Precision": 0.008741259,
+      "Recall": 1.0,
+      "RPrecision": 0.8,
       "MRR": 1.0,
       "PxRTable": [
         {
@@ -6183,8 +6282,9 @@
     },
     {
       "QueryID": "100",
-      "precision": 0.012853471,
-      "recall": 0.90909094,
+      "Precision": 0.012853471,
+      "Recall": 0.90909094,
+      "RPrecision": 0.27272728,
       "MRR": 1.0,
       "PxRTable": [
         {

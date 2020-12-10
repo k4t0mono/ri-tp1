@@ -2,7 +2,7 @@
 
 1 Stats:
   Search Seconds:         0.002
-  DocName Seconds:        0.122
+  DocName Seconds:        0.103
   Num Points:           946.000
   Num Good Points:       31.000
   Max Good Points:       34.000
@@ -34,7 +34,7 @@
 
 2 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.080
+  DocName Seconds:        0.078
   Num Points:           725.000
   Num Good Points:        6.000
   Max Good Points:        7.000
@@ -66,7 +66,7 @@
 
 3 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.111
+  DocName Seconds:        0.108
   Num Points:         1,000.000
   Num Good Points:       42.000
   Max Good Points:       43.000
@@ -98,7 +98,7 @@
 
 4 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.063
+  DocName Seconds:        0.056
   Num Points:           528.000
   Num Good Points:        9.000
   Max Good Points:        9.000
@@ -130,7 +130,7 @@
 
 5 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.056
+  DocName Seconds:        0.055
   Num Points:           512.000
   Num Good Points:       79.000
   Max Good Points:      131.000
@@ -162,7 +162,7 @@
 
 6 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.104
+  DocName Seconds:        0.105
   Num Points:           962.000
   Num Good Points:       24.000
   Max Good Points:       24.000
@@ -193,8 +193,8 @@
 7  -  text:mucus text:glycoproteins text:degraded text:differently text:cf text:patients text:compared text:normal text:subjects
 
 7 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.106
+  Search Seconds:         0.000
+  DocName Seconds:        0.108
   Num Points:         1,000.000
   Num Good Points:       24.000
   Max Good Points:       28.000
@@ -226,7 +226,7 @@
 
 8 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.085
+  DocName Seconds:        0.081
   Num Points:           766.000
   Num Good Points:       19.000
   Max Good Points:       22.000
@@ -258,7 +258,7 @@
 
 9 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.079
+  DocName Seconds:        0.081
   Num Points:           753.000
   Num Good Points:       10.000
   Max Good Points:       10.000
@@ -290,7 +290,7 @@
 
 10 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.099
+  DocName Seconds:        0.101
   Num Points:           947.000
   Num Good Points:       24.000
   Max Good Points:       25.000
@@ -321,8 +321,8 @@
 11  -  text:difference text:meconium text:ileus text:meconium text:plug text:syndrome
 
 11 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.025
+  Search Seconds:         0.000
+  DocName Seconds:        0.026
   Num Points:           241.000
   Num Good Points:       18.000
   Max Good Points:       22.000
@@ -354,7 +354,7 @@
 
 12 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.105
+  DocName Seconds:        0.106
   Num Points:           986.000
   Num Good Points:        7.000
   Max Good Points:        7.000
@@ -386,7 +386,7 @@
 
 13 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.109
+  DocName Seconds:        0.104
   Num Points:           958.000
   Num Good Points:       21.000
   Max Good Points:       24.000
@@ -418,7 +418,7 @@
 
 14 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.107
+  DocName Seconds:        0.106
   Num Points:           986.000
   Num Good Points:       50.000
   Max Good Points:       55.000
@@ -450,7 +450,7 @@
 
 15 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.050
+  DocName Seconds:        0.052
   Num Points:           472.000
   Num Good Points:       51.000
   Max Good Points:      104.000
@@ -482,7 +482,7 @@
 
 16 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.093
+  DocName Seconds:        0.086
   Num Points:           803.000
   Num Good Points:      143.000
   Max Good Points:      180.000
@@ -513,8 +513,8 @@
 17  -  text:effective text:regimen text:use text:pancreatic text:enzyme text:supplements text:treatment text:cf text:patients
 
 17 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.111
+  Search Seconds:         0.001
+  DocName Seconds:        0.106
   Num Points:           989.000
   Num Good Points:       50.000
   Max Good Points:       55.000
@@ -578,7 +578,7 @@
 
 19 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.113
+  DocName Seconds:        0.106
   Num Points:           984.000
   Num Good Points:       22.000
   Max Good Points:       22.000
@@ -610,7 +610,7 @@
 
 20 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.113
+  DocName Seconds:        0.104
   Num Points:           971.000
   Num Good Points:       41.000
   Max Good Points:       46.000
@@ -642,7 +642,7 @@
 
 21 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.103
+  DocName Seconds:        0.099
   Num Points:           937.000
   Num Good Points:       18.000
   Max Good Points:       25.000
@@ -674,7 +674,7 @@
 
 22 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.056
+  DocName Seconds:        0.049
   Num Points:           454.000
   Num Good Points:       36.000
   Max Good Points:       70.000
@@ -706,7 +706,7 @@
 
 23 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.125
+  DocName Seconds:        0.076
   Num Points:           694.000
   Num Good Points:       22.000
   Max Good Points:       35.000
@@ -738,7 +738,7 @@
 
 24 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.114
+  DocName Seconds:        0.095
   Num Points:           899.000
   Num Good Points:       24.000
   Max Good Points:       31.000
@@ -770,7 +770,7 @@
 
 25 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.075
+  DocName Seconds:        0.077
   Num Points:           700.000
   Num Good Points:       44.000
   Max Good Points:       51.000
@@ -801,8 +801,8 @@
 26  -  text:heterozygote text:advantage text:cf
 
 26 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.052
+  Search Seconds:         0.001
+  DocName Seconds:        0.053
   Num Points:           487.000
   Num Good Points:       24.000
   Max Good Points:       33.000
@@ -834,7 +834,7 @@
 
 27 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.070
+  DocName Seconds:        0.066
   Num Points:           603.000
   Num Good Points:        8.000
   Max Good Points:       11.000
@@ -865,7 +865,7 @@
 28  -  text:incidence text:male text:fertility text:cf
 
 28 Stats:
-  Search Seconds:         0.000
+  Search Seconds:         0.001
   DocName Seconds:        0.080
   Num Points:           753.000
   Num Good Points:       39.000
@@ -898,7 +898,7 @@
 
 29 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.087
+  DocName Seconds:        0.095
   Num Points:           839.000
   Num Good Points:       42.000
   Max Good Points:       44.000
@@ -930,7 +930,7 @@
 
 30 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.087
+  DocName Seconds:        0.089
   Num Points:           805.000
   Num Good Points:       13.000
   Max Good Points:       17.000
@@ -962,7 +962,7 @@
 
 31 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.097
+  DocName Seconds:        0.104
   Num Points:           943.000
   Num Good Points:       43.000
   Max Good Points:       58.000
@@ -993,8 +993,8 @@
 32  -  text:factors text:influence text:compliance text:prescribed text:therapy text:cf text:patients
 
 32 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.096
+  Search Seconds:         0.001
+  DocName Seconds:        0.099
   Num Points:           937.000
   Num Good Points:       26.000
   Max Good Points:       30.000
@@ -1025,8 +1025,8 @@
 33  -  text:conditions text:factors text:lead text:erroneous text:sweat text:tests
 
 33 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.039
+  Search Seconds:         0.001
+  DocName Seconds:        0.046
   Num Points:           379.000
   Num Good Points:       47.000
   Max Good Points:       57.000
@@ -1058,7 +1058,7 @@
 
 34 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.046
+  DocName Seconds:        0.047
   Num Points:           437.000
   Num Good Points:       33.000
   Max Good Points:       39.000
@@ -1089,8 +1089,8 @@
 35  -  text:cf text:patient text:found text:consistently text:normal text:sweat text:tests
 
 35 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.090
+  Search Seconds:         0.000
+  DocName Seconds:        0.093
   Num Points:           871.000
   Num Good Points:       10.000
   Max Good Points:       14.000
@@ -1122,7 +1122,7 @@
 
 36 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.102
+  DocName Seconds:        0.101
   Num Points:           955.000
   Num Good Points:        9.000
   Max Good Points:        9.000
@@ -1154,7 +1154,7 @@
 
 37 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.074
+  DocName Seconds:        0.077
   Num Points:           722.000
   Num Good Points:       85.000
   Max Good Points:       98.000
@@ -1185,7 +1185,7 @@
 38  -  text:cf text:diagnosed text:prenatally
 
 38 Stats:
-  Search Seconds:         0.001
+  Search Seconds:         0.000
   DocName Seconds:        0.046
   Num Points:           437.000
   Num Good Points:       21.000
@@ -1217,8 +1217,8 @@
 39  -  text:may text:heterozygotes text:cf text:identified
 
 39 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.071
+  Search Seconds:         0.000
+  DocName Seconds:        0.072
   Num Points:           677.000
   Num Good Points:      117.000
   Max Good Points:      162.000
@@ -1249,8 +1249,8 @@
 40  -  text:sweat text:test text:techniques text:may text:useful text:beyond text:neonatal text:period text:diagnosis text:cf
 
 40 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.088
+  Search Seconds:         0.000
+  DocName Seconds:        0.093
   Num Points:           866.000
   Num Good Points:      119.000
   Max Good Points:      146.000
@@ -1282,7 +1282,7 @@
 
 41 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.101
+  DocName Seconds:        0.104
   Num Points:           989.000
   Num Good Points:       14.000
   Max Good Points:       15.000
@@ -1314,7 +1314,7 @@
 
 42 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.095
+  DocName Seconds:        0.099
   Num Points:           949.000
   Num Good Points:       43.000
   Max Good Points:       47.000
@@ -1346,7 +1346,7 @@
 
 43 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.061
+  DocName Seconds:        0.081
   Num Points:           582.000
   Num Good Points:       85.000
   Max Good Points:       98.000
@@ -1377,8 +1377,8 @@
 44  -  text:structural text:enzymatic text:differences text:fibroblasts text:cf text:patients text:noncf text:patients
 
 44 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.094
+  Search Seconds:         0.000
+  DocName Seconds:        0.097
   Num Points:           924.000
   Num Good Points:      133.000
   Max Good Points:      140.000
@@ -1410,7 +1410,7 @@
 
 45 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.097
+  DocName Seconds:        0.100
   Num Points:           946.000
   Num Good Points:       19.000
   Max Good Points:       20.000
@@ -1442,7 +1442,7 @@
 
 46 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.095
+  DocName Seconds:        0.100
   Num Points:           941.000
   Num Good Points:       14.000
   Max Good Points:       18.000
@@ -1474,7 +1474,7 @@
 
 47 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.101
+  DocName Seconds:        0.103
   Num Points:         1,000.000
   Num Good Points:       57.000
   Max Good Points:       60.000
@@ -1505,8 +1505,8 @@
 48  -  text:fibroblasts text:cf text:patients text:grow text:normal text:rate
 
 48 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.099
+  Search Seconds:         0.000
+  DocName Seconds:        0.103
   Num Points:           988.000
   Num Good Points:       30.000
   Max Good Points:       30.000
@@ -1537,8 +1537,8 @@
 49  -  text:rna text:methylation text:polyamine text:metabolism text:normal text:cf text:patients
 
 49 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.099
+  Search Seconds:         0.001
+  DocName Seconds:        0.103
   Num Points:           983.000
   Num Good Points:       35.000
   Max Good Points:       36.000
@@ -1569,8 +1569,8 @@
 50  -  text:defects text:synthesis text:metabolism text:cyclic text:nucleotides text:described text:cf text:patients
 
 50 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.096
+  Search Seconds:         0.000
+  DocName Seconds:        0.100
   Num Points:           942.000
   Num Good Points:       23.000
   Max Good Points:       25.000
@@ -1602,7 +1602,7 @@
 
 51 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.101
+  DocName Seconds:        0.105
   Num Points:         1,000.000
   Num Good Points:      218.000
   Max Good Points:      241.000
@@ -1634,7 +1634,7 @@
 
 52 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.096
+  DocName Seconds:        0.100
   Num Points:           913.000
   Num Good Points:        2.000
   Max Good Points:        2.000
@@ -1666,7 +1666,7 @@
 
 53 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.094
+  DocName Seconds:        0.097
   Num Points:           911.000
   Num Good Points:       23.000
   Max Good Points:       23.000
@@ -1698,7 +1698,7 @@
 
 54 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.100
+  DocName Seconds:        0.107
   Num Points:         1,000.000
   Num Good Points:       59.000
   Max Good Points:       62.000
@@ -1730,7 +1730,7 @@
 
 55 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.091
+  DocName Seconds:        0.097
   Num Points:           910.000
   Num Good Points:       22.000
   Max Good Points:       24.000
@@ -1762,7 +1762,7 @@
 
 56 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.095
+  DocName Seconds:        0.102
   Num Points:           947.000
   Num Good Points:       32.000
   Max Good Points:       32.000
@@ -1793,8 +1793,8 @@
 57  -  text:pathophysiologic text:role text:circulating text:antibodies text:pseudomonas text:aeruginosa text:cf text:patients
 
 57 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.093
+  Search Seconds:         0.001
+  DocName Seconds:        0.100
   Num Points:           919.000
   Num Good Points:       51.000
   Max Good Points:       51.000
@@ -1826,7 +1826,7 @@
 
 58 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.094
+  DocName Seconds:        0.100
   Num Points:           945.000
   Num Good Points:       90.000
   Max Good Points:       95.000
@@ -1857,8 +1857,8 @@
 59  -  text:immunologic text:abnormalities text:found text:cf text:patients
 
 59 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.096
+  Search Seconds:         0.000
+  DocName Seconds:        0.100
   Num Points:           956.000
   Num Good Points:      128.000
   Max Good Points:      145.000
@@ -1889,8 +1889,8 @@
 60  -  text:effects text:cf text:pulmonary text:circulation
 
 60 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.061
+  Search Seconds:         0.001
+  DocName Seconds:        0.063
   Num Points:           589.000
   Num Good Points:       23.000
   Max Good Points:       34.000
@@ -1921,8 +1921,8 @@
 61  -  text:defect text:mucociliary text:transport text:clearance text:respiratory text:tract text:cf text:patients
 
 61 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.095
+  Search Seconds:         0.000
+  DocName Seconds:        0.098
   Num Points:           943.000
   Num Good Points:       58.000
   Max Good Points:       70.000
@@ -1953,8 +1953,8 @@
 62  -  text:clinical text:features text:lung text:disease text:cf text:patients
 
 62 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.101
+  Search Seconds:         0.001
+  DocName Seconds:        0.104
   Num Points:         1,000.000
   Num Good Points:      134.000
   Max Good Points:      144.000
@@ -1986,7 +1986,7 @@
 
 63 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.092
+  DocName Seconds:        0.095
   Num Points:           910.000
   Num Good Points:       30.000
   Max Good Points:       39.000
@@ -2017,8 +2017,8 @@
 64  -  text:lung text:function text:change text:time text:cf text:patients text:time text:periods text:greater text:day
 
 64 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.099
+  Search Seconds:         0.001
+  DocName Seconds:        0.103
   Num Points:           977.000
   Num Good Points:       48.000
   Max Good Points:       50.000
@@ -2050,7 +2050,7 @@
 
 65 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.097
+  DocName Seconds:        0.101
   Num Points:           958.000
   Num Good Points:       87.000
   Max Good Points:       94.000
@@ -2081,8 +2081,8 @@
 66  -  text:pathologic text:features text:lung text:disease text:cf text:patients
 
 66 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.099
+  Search Seconds:         0.000
+  DocName Seconds:        0.104
   Num Points:         1,000.000
   Num Good Points:       55.000
   Max Good Points:       63.000
@@ -2114,7 +2114,7 @@
 
 67 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.081
+  DocName Seconds:        0.085
   Num Points:           809.000
   Num Good Points:       13.000
   Max Good Points:       14.000
@@ -2145,8 +2145,8 @@
 68  -  text:effects text:bronchodilators text:cf text:patients
 
 68 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.090
+  Search Seconds:         0.000
+  DocName Seconds:        0.095
   Num Points:           908.000
   Num Good Points:       43.000
   Max Good Points:       45.000
@@ -2178,7 +2178,7 @@
 
 69 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.091
+  DocName Seconds:        0.095
   Num Points:           902.000
   Num Good Points:       12.000
   Max Good Points:       15.000
@@ -2210,7 +2210,7 @@
 
 70 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.095
+  DocName Seconds:        0.099
   Num Points:           934.000
   Num Good Points:       17.000
   Max Good Points:       17.000
@@ -2241,8 +2241,8 @@
 71  -  text:prognosis text:infants text:wheezing text:cystic text:fibrosis
 
 71 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.101
+  Search Seconds:         0.000
+  DocName Seconds:        0.104
   Num Points:         1,000.000
   Num Good Points:        6.000
   Max Good Points:        6.000
@@ -2274,7 +2274,7 @@
 
 72 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.095
+  DocName Seconds:        0.099
   Num Points:           937.000
   Num Good Points:       13.000
   Max Good Points:       13.000
@@ -2305,8 +2305,8 @@
 73  -  text:effective text:bronchial text:lavage text:cf text:patients
 
 73 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.092
+  Search Seconds:         0.001
+  DocName Seconds:        0.096
   Num Points:           910.000
   Num Good Points:       16.000
   Max Good Points:       18.000
@@ -2338,7 +2338,7 @@
 
 74 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.098
+  DocName Seconds:        0.104
   Num Points:           969.000
   Num Good Points:        6.000
   Max Good Points:        7.000
@@ -2370,7 +2370,7 @@
 
 75 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.099
+  DocName Seconds:        0.104
   Num Points:           970.000
   Num Good Points:       20.000
   Max Good Points:       21.000
@@ -2402,7 +2402,7 @@
 
 76 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.103
+  DocName Seconds:        0.101
   Num Points:           963.000
   Num Good Points:       12.000
   Max Good Points:       17.000
@@ -2434,7 +2434,7 @@
 
 77 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.098
+  DocName Seconds:        0.099
   Num Points:           936.000
   Num Good Points:       66.000
   Max Good Points:       82.000
@@ -2466,7 +2466,7 @@
 
 78 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.099
+  DocName Seconds:        0.101
   Num Points:           962.000
   Num Good Points:       71.000
   Max Good Points:       77.000
@@ -2498,7 +2498,7 @@
 
 79 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.104
+  DocName Seconds:        0.098
   Num Points:           946.000
   Num Good Points:       40.000
   Max Good Points:       43.000
@@ -2530,7 +2530,7 @@
 
 80 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.033
+  DocName Seconds:        0.031
   Num Points:           316.000
   Num Good Points:       24.000
   Max Good Points:       34.000
@@ -2562,7 +2562,7 @@
 
 81 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.104
+  DocName Seconds:        0.099
   Num Points:           934.000
   Num Good Points:       27.000
   Max Good Points:       28.000
@@ -2594,7 +2594,7 @@
 
 82 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.105
+  DocName Seconds:        0.107
   Num Points:         1,000.000
   Num Good Points:       60.000
   Max Good Points:       62.000
@@ -2625,8 +2625,8 @@
 83  -  text:role text:bacterial text:phagocytosis text:alveolar text:macrophages text:polymorphonuclear text:leukocytes text:lung text:disease text:cf text:patients
 
 83 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.109
+  Search Seconds:         0.001
+  DocName Seconds:        0.106
   Num Points:         1,000.000
   Num Good Points:       32.000
   Max Good Points:       32.000
@@ -2658,7 +2658,7 @@
 
 84 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.094
+  DocName Seconds:        0.098
   Num Points:           904.000
   Num Good Points:       15.000
   Max Good Points:       16.000
@@ -2689,8 +2689,8 @@
 85  -  text:cf text:patients text:ever text:develop text:infection text:organs text:lung text:organs
 
 85 Stats:
-  Search Seconds:         0.001
-  DocName Seconds:        0.099
+  Search Seconds:         0.000
+  DocName Seconds:        0.101
   Num Points:           951.000
   Num Good Points:       27.000
   Max Good Points:       31.000
@@ -2721,8 +2721,8 @@
 86  -  text:role text:bacteria text:pseudomonas text:aeruginosa text:staphylococcus text:aureus text:haemophilus text:influenzae text:pathogenesis text:lung text:disease text:cf text:patients
 
 86 Stats:
-  Search Seconds:         0.000
-  DocName Seconds:        0.103
+  Search Seconds:         0.001
+  DocName Seconds:        0.108
   Num Points:         1,000.000
   Num Good Points:       47.000
   Max Good Points:       47.000
@@ -2754,7 +2754,7 @@
 
 87 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.106
+  DocName Seconds:        0.107
   Num Points:         1,000.000
   Num Good Points:       38.000
   Max Good Points:       38.000
@@ -2786,7 +2786,7 @@
 
 88 Stats:
   Search Seconds:         0.000
-  DocName Seconds:        0.105
+  DocName Seconds:        0.108
   Num Points:         1,000.000
   Num Good Points:       11.000
   Max Good Points:       14.000
@@ -2818,7 +2818,7 @@
 
 89 Stats:
   Search Seconds:         0.001
-  DocName Seconds:        0.097
+  DocName Seconds:        0.098
   Num Points:           923.000
   Num Good Points:       17.000
   Max Good Points:       17.000
