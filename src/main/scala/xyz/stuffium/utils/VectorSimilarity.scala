@@ -7,7 +7,7 @@ import scala.math.log
 class VectorSimilarity extends TFIDFSimilarity {
 
   override def tf(freq: Float): Float = {
-    1f + log(freq).toFloat
+    log(1 + freq).toFloat
   }
 
   override def idf(docFreq: Long, docCount: Long): Float = {

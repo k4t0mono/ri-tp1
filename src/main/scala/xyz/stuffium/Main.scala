@@ -47,8 +47,8 @@ object Main extends LazyLogging {
     val (qqs, cjs) = CFCImporter.importCFQueries()
     val data = CFCImporter.importCFC()
 
-//    storeVector(data)
-//    storeBM25(data)
+    storeVector(data)
+    storeBM25(data)
 
     val judge = new CFCJudge
     judge.addJudgments(cjs)

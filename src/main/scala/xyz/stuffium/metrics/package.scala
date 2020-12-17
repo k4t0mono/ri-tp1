@@ -36,7 +36,7 @@ package object metrics extends LazyLogging {
     val qs = QualityStats.average(qss.toArray)
     val mrr = qrs.map(x => x.mrr).sum / qrs.length
 
-    new ModelReport(model, qrs, qs.getPrecisionAt(5).toFloat, qs.getPrecisionAt(10).toFloat, mrr)
+    new ModelReport(model, qrs, qs.getPrecisionAt(5).toFloat, qs.getPrecisionAt(10).toFloat, mrr, qs.getRecall.toFloat)
   }
 
   def exportModelReport(mr: ModelReport, path: String): Unit = {

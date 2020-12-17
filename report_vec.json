@@ -1,325 +1,338 @@
 {
   "model": "vectorial",
-  "precisionAt5": 0.504,
-  "precisionAt10": 0.404,
-  "mrr": 0.71961105,
+  "recall": 0.87132436,
+  "precisionAt5": 0.512,
+  "precisionAt10": 0.395,
+  "mrr": 0.7367619,
   "queries": [
     {
-      "QueryID": "1",
-      "Precision": 0.054481547,
-      "Recall": 0.9117647,
-      "RPrecision": 0.3529412,
-      "MRR": 1.0,
+      "queryID": "1",
+      "precision": 0.055357143,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.6,
+      "recall": 0.9117647,
+      "rp": 0.3529412,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.7166667,
+          "precision": 0.67857146,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.7166667,
+          "precision": 0.67857146,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.9466668,
+          "precision": 0.58666664,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.46252584,
+          "precision": 0.47660455,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.3047104,
+          "precision": 0.37147146,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.20731707,
+          "precision": 0.1954023,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.12292996,
+          "precision": 0.102808654,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.28460276,
+          "precision": 0.10149533,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.013607301,
+          "precision": 0.07327479,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.32761508,
+          "precision": 0.058266483,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.32761508,
+          "precision": 0.058266483,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "2",
-      "Precision": 0.008333334,
-      "Recall": 0.85714287,
-      "RPrecision": 0.14285715,
-      "MRR": 0.2,
+      "queryID": "2",
+      "precision": 0.008333334,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.2,
+      "recall": 0.85714287,
+      "rp": 0.14285715,
+      "mrr": 0.2,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.20545454,
+          "precision": 0.22,
           "interpolated": true
         },
         {
           "recall": 0.2,
-          "precision": 0.20545454,
+          "precision": 0.22,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.3647572,
+          "precision": 0.22905405,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.3647572,
+          "precision": 0.082432434,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.0847877,
+          "precision": 0.031443454,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.06956467,
+          "precision": 0.019461881,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.06956467,
+          "precision": 0.009366177,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.0050617266,
+          "precision": 0.008169572,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.0050617266,
+          "precision": 0.008169572,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.0050617266,
+          "precision": 0.008169572,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "3",
-      "Precision": 0.045602605,
-      "Recall": 0.9767442,
-      "RPrecision": 0.20930232,
-      "MRR": 0.25,
+      "queryID": "3",
+      "precision": 0.045602605,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.9767442,
+      "rp": 0.20930232,
+      "mrr": 0.25,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.18690476,
+          "precision": 0.18282829,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.18690476,
+          "precision": 0.18282829,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.17124543,
+          "precision": 0.21921052,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.22354233,
+          "precision": 0.15353034,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.36232507,
+          "precision": 0.16676924,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.13341239,
+          "precision": 0.11053397,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.41992688,
+          "precision": 0.07933301,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.06776453,
+          "precision": 0.06996654,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.014009666,
+          "precision": 0.048245057,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.019416323,
+          "precision": 0.047682766,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.019416323,
+          "precision": 0.047682766,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "4",
-      "Precision": 0.02356021,
-      "Recall": 1.0,
-      "RPrecision": 0.22222222,
-      "MRR": 0.33333334,
+      "queryID": "4",
+      "precision": 0.023316063,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.2,
+      "recall": 1.0,
+      "rp": 0.22222222,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.34444445,
+          "precision": 0.24444444,
           "interpolated": true
         },
         {
           "recall": 0.2,
-          "precision": 0.34444445,
+          "precision": 0.24444444,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.272549,
+          "precision": 0.19019608,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.12705883,
+          "precision": 0.19690403,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.5275471,
+          "precision": 0.1533401,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.033859346,
+          "precision": 0.09703657,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.12454544,
+          "precision": 0.09801913,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.18558848,
+          "precision": 0.09660131,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.5862109,
+          "precision": 0.08703751,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.02356021,
+          "precision": 0.023316063,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "5",
-      "Precision": 0.15429688,
-      "Recall": 0.60305345,
-      "RPrecision": 0.28244275,
-      "MRR": 0.5,
+      "queryID": "5",
+      "precision": 0.15429688,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.7,
+      "recall": 0.60305345,
+      "rp": 0.28244275,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.7660131,
+          "precision": 0.8090278,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.7660131,
+          "precision": 0.8090278,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 1.334132,
+          "precision": 0.43436056,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.57977206,
+          "precision": 0.26280996,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 1.1504313,
+          "precision": 0.24289855,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.34388185,
+          "precision": 0.16116378,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.124594875,
+          "precision": 0.15411659,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.124594875,
+          "precision": 0.15411659,
           "interpolated": true
         },
         {
           "recall": 0.8,
-          "precision": 0.124594875,
+          "precision": 0.15411659,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.124594875,
+          "precision": 0.15411659,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.124594875,
+          "precision": 0.15411659,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "6",
-      "Precision": 0.03287671,
-      "Recall": 1.0,
-      "RPrecision": 0.25,
-      "MRR": 0.5,
+      "queryID": "6",
+      "precision": 0.032697547,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.4,
+      "recall": 1.0,
+      "rp": 0.25,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -333,185 +346,191 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.9142859,
+          "precision": 0.39999998,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.14472947,
+          "precision": 0.27917242,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.19378889,
+          "precision": 0.2,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.12,
+          "precision": 0.12371134,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.049492877,
+          "precision": 0.0935,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.053512897,
+          "precision": 0.094717234,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.11381473,
+          "precision": 0.07285003,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.59343493,
+          "precision": 0.047783464,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.03287671,
+          "precision": 0.032697547,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "7",
-      "Precision": 0.029776676,
-      "Recall": 0.85714287,
-      "RPrecision": 0.14285715,
-      "MRR": 0.33333334,
+      "queryID": "7",
+      "precision": 0.029925186,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 0.85714287,
+      "rp": 0.14285715,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.48000002,
+          "precision": 0.42285714,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.48000002,
+          "precision": 0.42285714,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.23101193,
+          "precision": 0.07461539,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.052661072,
+          "precision": 0.03536208,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.03915057,
+          "precision": 0.03846154,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.03422983,
+          "precision": 0.03482587,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.048668142,
+          "precision": 0.036041416,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.01782452,
+          "precision": 0.037720468,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.1501899,
+          "precision": 0.034377217,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.1501899,
+          "precision": 0.034377217,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.1501899,
+          "precision": 0.034377217,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "8",
-      "Precision": 0.025469169,
-      "Recall": 0.8636364,
-      "RPrecision": 0.09090909,
-      "MRR": 0.16666667,
+      "queryID": "8",
+      "precision": 0.025469169,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.2,
+      "recall": 0.8636364,
+      "rp": 0.09090909,
+      "mrr": 0.25,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.23176295,
+          "precision": 0.23169644,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.23176295,
+          "precision": 0.23169644,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.016760351,
+          "precision": 0.021245806,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.01776065,
+          "precision": 0.02103177,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.011275594,
+          "precision": 0.02515826,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.027989822,
+          "precision": 0.027848102,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.03787332,
+          "precision": 0.027682075,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.055537656,
+          "precision": 0.02641287,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.018125981,
+          "precision": 0.024039939,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.018125981,
+          "precision": 0.024039939,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.018125981,
+          "precision": 0.024039939,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "9",
-      "Precision": 0.013422819,
-      "Recall": 1.0,
-      "RPrecision": 0.3,
-      "MRR": 1.0,
+      "queryID": "9",
+      "precision": 0.013422819,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 1.0,
+      "rp": 0.3,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -525,22 +544,22 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.6666667,
+          "precision": 1.0,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.3,
+          "precision": 0.42857143,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.2857143,
+          "precision": 0.26666668,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.2,
+          "precision": 0.1923077,
           "interpolated": false
         },
         {
@@ -550,17 +569,17 @@
         },
         {
           "recall": 0.7,
-          "precision": 0.10606061,
+          "precision": 0.0945946,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.08163265,
+          "precision": 0.08421053,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.032967035,
+          "precision": 0.03125,
           "interpolated": false
         },
         {
@@ -571,11 +590,13 @@
       ]
     },
     {
-      "QueryID": "10",
-      "Precision": 0.02583423,
-      "Recall": 0.96,
-      "RPrecision": 0.44,
-      "MRR": 1.0,
+      "queryID": "10",
+      "precision": 0.02583423,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.7,
+      "recall": 0.96,
+      "rp": 0.44,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -594,52 +615,54 @@
         },
         {
           "recall": 0.3,
-          "precision": 1.5000001,
+          "precision": 0.75252527,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.625,
+          "precision": 0.5555556,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.8717011,
+          "precision": 0.2528988,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.14851485,
+          "precision": 0.12711865,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.1066033,
+          "precision": 0.058859408,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.028169014,
+          "precision": 0.028860029,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.04748591,
+          "precision": 0.025708549,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.04748591,
+          "precision": 0.025708549,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "11",
-      "Precision": 0.21176471,
-      "Recall": 0.8181818,
-      "RPrecision": 0.45454547,
-      "MRR": 1.0,
+      "queryID": "11",
+      "precision": 0.2195122,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.8,
+      "recall": 0.8181818,
+      "rp": 0.4090909,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -658,12 +681,12 @@
         },
         {
           "recall": 0.3,
-          "precision": 1.1587303,
+          "precision": 0.86785716,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.6945455,
+          "precision": 0.71384615,
           "interpolated": false
         },
         {
@@ -673,96 +696,100 @@
         },
         {
           "recall": 0.6,
-          "precision": 0.36656865,
+          "precision": 0.41548383,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.9119526,
+          "precision": 0.32857147,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.9981899,
+          "precision": 0.23632269,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.9981899,
+          "precision": 0.23632269,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.9981899,
+          "precision": 0.23632269,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "12",
-      "Precision": 0.010057472,
-      "Recall": 1.0,
-      "RPrecision": 0.14285715,
-      "MRR": 0.16666667,
+      "queryID": "12",
+      "precision": 0.01,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.2,
+      "recall": 1.0,
+      "rp": 0.14285715,
+      "mrr": 0.2,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.14166667,
+          "precision": 0.20888889,
           "interpolated": true
         },
         {
           "recall": 0.2,
-          "precision": 0.14166667,
+          "precision": 0.20888889,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.4357143,
+          "precision": 0.21153846,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.4357143,
+          "precision": 0.13675213,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.09071429,
+          "precision": 0.11651584,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.40637708,
+          "precision": 0.09916815,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.40637708,
+          "precision": 0.034492,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.09628544,
+          "precision": 0.015770301,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.0057579023,
+          "precision": 0.009614173,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.010057472,
+          "precision": 0.01,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "13",
-      "Precision": 0.022245763,
-      "Recall": 0.875,
-      "RPrecision": 0.375,
-      "MRR": 1.0,
+      "queryID": "13",
+      "precision": 0.022245763,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.5,
+      "recall": 0.875,
+      "rp": 0.33333334,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -776,185 +803,191 @@
         },
         {
           "recall": 0.2,
-          "precision": 1.7111113,
+          "precision": 0.6999999,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.67649114,
+          "precision": 0.40941176,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 1.2785717,
+          "precision": 0.27165955,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.13793103,
+          "precision": 0.13043478,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.08771398,
+          "precision": 0.07009293,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.070518434,
+          "precision": 0.023500936,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.045885764,
+          "precision": 0.024183035,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.045885764,
+          "precision": 0.024183035,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.045885764,
+          "precision": 0.024183035,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "14",
-      "Precision": 0.052246604,
-      "Recall": 0.90909094,
-      "RPrecision": 0.27272728,
-      "MRR": 0.33333334,
+      "queryID": "14",
+      "precision": 0.052246604,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.6,
+      "recall": 0.90909094,
+      "rp": 0.27272728,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.6458334,
+          "precision": 0.6125,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.6458334,
+          "precision": 0.6125,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.42307693,
+          "precision": 0.44,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.7484846,
+          "precision": 0.22880703,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.14666666,
+          "precision": 0.14285715,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.22138299,
+          "precision": 0.13821508,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.12222222,
+          "precision": 0.11913358,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.19132459,
+          "precision": 0.08480494,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.07985481,
+          "precision": 0.079422385,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.020122387,
+          "precision": 0.051885657,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.020122387,
+          "precision": 0.051885657,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "15",
-      "Precision": 0.108050846,
-      "Recall": 0.4903846,
-      "RPrecision": 0.26923078,
-      "MRR": 0.5,
+      "queryID": "15",
+      "precision": 0.108050846,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.6,
+      "recall": 0.4903846,
+      "rp": 0.26923078,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.46403164,
+          "precision": 0.43569025,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.46403164,
+          "precision": 0.43569025,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.4914084,
+          "precision": 0.36808652,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.803674,
+          "precision": 0.2551515,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.2909084,
+          "precision": 0.1452126,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.2909084,
+          "precision": 0.1452126,
           "interpolated": true
         },
         {
           "recall": 0.6,
-          "precision": 0.2909084,
+          "precision": 0.1452126,
           "interpolated": true
         },
         {
           "recall": 0.7,
-          "precision": 0.2909084,
+          "precision": 0.1452126,
           "interpolated": true
         },
         {
           "recall": 0.8,
-          "precision": 0.2909084,
+          "precision": 0.1452126,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.2909084,
+          "precision": 0.1452126,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.2909084,
+          "precision": 0.1452126,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "16",
-      "Precision": 0.17942284,
-      "Recall": 0.79444444,
-      "RPrecision": 0.2777778,
-      "MRR": 1.0,
+      "queryID": "16",
+      "precision": 0.17942284,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.7,
+      "recall": 0.79444444,
+      "rp": 0.28333333,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -968,27 +1001,27 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.34951457,
+          "precision": 0.3243243,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.2827225,
+          "precision": 0.27979276,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.27480915,
+          "precision": 0.2647059,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.234375,
+          "precision": 0.23076923,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.20300752,
+          "precision": 0.20377359,
           "interpolated": false
         },
         {
@@ -1014,124 +1047,128 @@
       ]
     },
     {
-      "QueryID": "17",
-      "Precision": 0.05065856,
-      "Recall": 0.90909094,
-      "RPrecision": 0.23636363,
-      "MRR": 1.0,
+      "queryID": "17",
+      "precision": 0.05065856,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.4,
+      "recall": 0.90909094,
+      "rp": 0.23636363,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.3541667,
+          "precision": 0.34313726,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.3541667,
+          "precision": 0.34313726,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.33333334,
+          "precision": 0.32352942,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.14806089,
+          "precision": 0.18746771,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.13836478,
+          "precision": 0.13173653,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.06408805,
+          "precision": 0.08634615,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.07158352,
+          "precision": 0.07066381,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.192458,
+          "precision": 0.06398362,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.06010929,
+          "precision": 0.060941827,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.0123080015,
+          "precision": 0.050227653,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.0123080015,
+          "precision": 0.050227653,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "18",
-      "Precision": 0.02586207,
-      "Recall": 1.0,
-      "RPrecision": 0.47619048,
-      "MRR": 1.0,
+      "queryID": "18",
+      "precision": 0.02586207,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.7,
+      "recall": 1.0,
+      "rp": 0.47619048,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.975,
+          "precision": 1.0,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.975,
+          "precision": 1.0,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.46964294,
+          "precision": 0.5821429,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.5366668,
+          "precision": 0.6766667,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 1.6994321,
+          "precision": 0.66136366,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.671739,
+          "precision": 0.50228834,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 1.5444444,
+          "precision": 0.36642855,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.904878,
+          "precision": 0.26397756,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 1.8060939,
+          "precision": 0.05450394,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.056221813,
+          "precision": 0.030222775,
           "interpolated": false
         },
         {
@@ -1142,99 +1179,103 @@
       ]
     },
     {
-      "QueryID": "19",
-      "Precision": 0.026159335,
-      "Recall": 1.0,
-      "RPrecision": 0.045454547,
-      "MRR": 0.0,
+      "queryID": "19",
+      "precision": 0.026097272,
+      "precisionAt5": 0.0,
+      "precisionAt10": 0.0,
+      "recall": 1.0,
+      "rp": 0.045454547,
+      "mrr": 0.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.09456522,
+          "precision": 0.09178744,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.09456522,
+          "precision": 0.09178744,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.10060607,
+          "precision": 0.13382353,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.12888889,
+          "precision": 0.15090017,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.08668286,
+          "precision": 0.13916667,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.10377359,
+          "precision": 0.106796116,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.08858592,
+          "precision": 0.06548821,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.1752806,
+          "precision": 0.06447282,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.41826656,
+          "precision": 0.045624856,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.13518439,
+          "precision": 0.033551786,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.026159335,
+          "precision": 0.026097272,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "20",
-      "Precision": 0.0524968,
-      "Recall": 0.8913044,
-      "RPrecision": 0.39130434,
-      "MRR": 1.0,
+      "queryID": "20",
+      "precision": 0.052096568,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.8,
+      "recall": 0.8913044,
+      "rp": 0.39130434,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 1.0,
+          "precision": 0.9,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 1.0,
+          "precision": 0.9,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 1.1933334,
+          "precision": 0.8212121,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.5994151,
+          "precision": 0.69684213,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.45583332,
+          "precision": 0.39745453,
           "interpolated": false
         },
         {
@@ -1244,37 +1285,39 @@
         },
         {
           "recall": 0.6,
-          "precision": 1.0085444,
+          "precision": 0.2146293,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.64075017,
+          "precision": 0.10520987,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.053918254,
+          "precision": 0.058671728,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.053918254,
+          "precision": 0.058671728,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.053918254,
+          "precision": 0.058671728,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "21",
-      "Precision": 0.019889502,
-      "Recall": 0.72,
-      "RPrecision": 0.24,
-      "MRR": 1.0,
+      "queryID": "21",
+      "precision": 0.019889502,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.4,
+      "recall": 0.72,
+      "rp": 0.24,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1293,52 +1336,54 @@
         },
         {
           "recall": 0.3,
-          "precision": 0.17594858,
+          "precision": 0.18761785,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.12345679,
+          "precision": 0.12195122,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.27256104,
+          "precision": 0.07105696,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.029469548,
+          "precision": 0.02964427,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.040977217,
+          "precision": 0.020569753,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.040977217,
+          "precision": 0.020569753,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.040977217,
+          "precision": 0.020569753,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.040977217,
+          "precision": 0.020569753,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "22",
-      "Precision": 0.07929515,
-      "Recall": 0.51428574,
-      "RPrecision": 0.2,
-      "MRR": 1.0,
+      "queryID": "22",
+      "precision": 0.07929515,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.6,
+      "recall": 0.51428574,
+      "rp": 0.2,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1352,12 +1397,12 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.28,
+          "precision": 0.23728813,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.12280702,
+          "precision": 0.125,
           "interpolated": false
         },
         {
@@ -1398,40 +1443,42 @@
       ]
     },
     {
-      "QueryID": "23",
-      "Precision": 0.033898305,
-      "Recall": 0.62857145,
-      "RPrecision": 0.028571429,
-      "MRR": 0.0,
+      "queryID": "23",
+      "precision": 0.033898305,
+      "precisionAt5": 0.0,
+      "precisionAt10": 0.0,
+      "recall": 0.62857145,
+      "rp": 0.028571429,
+      "mrr": 0.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.05449658,
+          "precision": 0.056336198,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.05449658,
+          "precision": 0.056336198,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.08045977,
+          "precision": 0.086419754,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.04173138,
+          "precision": 0.0632259,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.046666667,
+          "precision": 0.047945205,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.052065257,
+          "precision": 0.03772309,
           "interpolated": false
         },
         {
@@ -1462,11 +1509,13 @@
       ]
     },
     {
-      "QueryID": "24",
-      "Precision": 0.026815642,
-      "Recall": 0.7741935,
-      "RPrecision": 0.032258064,
-      "MRR": 0.0,
+      "queryID": "24",
+      "precision": 0.026815642,
+      "precisionAt5": 0.0,
+      "precisionAt10": 0.0,
+      "recall": 0.7741935,
+      "rp": 0.032258064,
+      "mrr": 0.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1480,57 +1529,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.050125115,
+          "precision": 0.05770385,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.09113081,
+          "precision": 0.051875897,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.040595606,
+          "precision": 0.03658646,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.061227195,
+          "precision": 0.030192321,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.10483017,
+          "precision": 0.026875202,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.005724594,
+          "precision": 0.025149655,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.005724594,
+          "precision": 0.025149655,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.005724594,
+          "precision": 0.025149655,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.005724594,
+          "precision": 0.025149655,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "25",
-      "Precision": 0.064896755,
-      "Recall": 0.8627451,
-      "RPrecision": 0.27450982,
-      "MRR": 0.33333334,
+      "queryID": "25",
+      "precision": 0.064896755,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.8627451,
+      "rp": 0.25490198,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1544,57 +1595,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.26989236,
+          "precision": 0.34857145,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.36082095,
+          "precision": 0.2529661,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.85897434,
+          "precision": 0.19130145,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.21115795,
+          "precision": 0.16191417,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.028772231,
+          "precision": 0.09227399,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.14848977,
+          "precision": 0.0837012,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.35414904,
+          "precision": 0.075110346,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.35414904,
+          "precision": 0.075110346,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.35414904,
+          "precision": 0.075110346,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "26",
-      "Precision": 0.06741573,
-      "Recall": 0.72727275,
-      "RPrecision": 0.33333334,
-      "MRR": 1.0,
+      "queryID": "26",
+      "precision": 0.06896552,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.5,
+      "recall": 0.72727275,
+      "rp": 0.33333334,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1608,57 +1661,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.44318193,
+          "precision": 0.52307695,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.5,
+          "precision": 0.49736843,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.27651125,
+          "precision": 0.25776774,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.3796901,
+          "precision": 0.15073834,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.15922713,
+          "precision": 0.09500236,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.110278614,
+          "precision": 0.07199089,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.110278614,
+          "precision": 0.07199089,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.110278614,
+          "precision": 0.07199089,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.110278614,
+          "precision": 0.07199089,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "27",
-      "Precision": 0.015296367,
-      "Recall": 0.72727275,
-      "RPrecision": 0.27272728,
-      "MRR": 1.0,
+      "queryID": "27",
+      "precision": 0.015296367,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.3,
+      "recall": 0.72727275,
+      "rp": 0.27272728,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1672,185 +1727,191 @@
         },
         {
           "recall": 0.2,
-          "precision": 1.225,
+          "precision": 0.92,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 2.0876436,
+          "precision": 0.43318683,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.09964002,
+          "precision": 0.03786788,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.015227629,
+          "precision": 0.0281927,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.1118748,
+          "precision": 0.019476738,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.006545028,
+          "precision": 0.014915873,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.006545028,
+          "precision": 0.014915873,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.006545028,
+          "precision": 0.014915873,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.006545028,
+          "precision": 0.014915873,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "28",
-      "Precision": 0.05409154,
-      "Recall": 0.7647059,
-      "RPrecision": 0.1764706,
-      "MRR": 1.0,
+      "queryID": "28",
+      "precision": 0.05409154,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.4,
+      "recall": 0.7647059,
+      "rp": 0.1764706,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.45194808,
+          "precision": 0.41785714,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.45194808,
+          "precision": 0.41785714,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.14788659,
+          "precision": 0.17521918,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.20240021,
+          "precision": 0.09214214,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.081469275,
+          "precision": 0.06676688,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.11513591,
+          "precision": 0.05444079,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.037178203,
+          "precision": 0.04980198,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.011971671,
+          "precision": 0.051858585,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.011971671,
+          "precision": 0.051858585,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.011971671,
+          "precision": 0.051858585,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.011971671,
+          "precision": 0.051858585,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "29",
-      "Precision": 0.05090909,
-      "Recall": 0.95454544,
-      "RPrecision": 0.045454547,
-      "MRR": 0.11111111,
+      "queryID": "29",
+      "precision": 0.05090909,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 0.95454544,
+      "rp": 0.045454547,
+      "mrr": 0.2,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.07472528,
+          "precision": 0.06849817,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.07472528,
+          "precision": 0.06849817,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.042261004,
+          "precision": 0.069059834,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.07982332,
+          "precision": 0.058383834,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.0146057755,
+          "precision": 0.051823705,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.04074074,
+          "precision": 0.041666668,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.036522098,
+          "precision": 0.03943638,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.011854647,
+          "precision": 0.04177872,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.011201456,
+          "precision": 0.04550086,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.0138284825,
+          "precision": 0.048743285,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.0138284825,
+          "precision": 0.048743285,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "30",
-      "Precision": 0.016709512,
-      "Recall": 0.7647059,
-      "RPrecision": 0.23529412,
-      "MRR": 0.5,
+      "queryID": "30",
+      "precision": 0.016709512,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.4,
+      "recall": 0.7647059,
+      "rp": 0.23529412,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1864,57 +1925,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.685,
+          "precision": 0.77,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.29444447,
+          "precision": 0.27608696,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.24145457,
+          "precision": 0.27617392,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.37199533,
+          "precision": 0.18523811,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 1.2090402,
+          "precision": 0.10987532,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.074342296,
+          "precision": 0.01661072,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.074342296,
+          "precision": 0.01661072,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.074342296,
+          "precision": 0.01661072,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.074342296,
+          "precision": 0.01661072,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "31",
-      "Precision": 0.04569607,
-      "Recall": 0.7413793,
-      "RPrecision": 0.18965517,
-      "MRR": 1.0,
+      "queryID": "31",
+      "precision": 0.04569607,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.5,
+      "recall": 0.7413793,
+      "rp": 0.18965517,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -1928,96 +1991,98 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.71357554,
+          "precision": 0.16127974,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.13396071,
+          "precision": 0.091615684,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.024531554,
+          "precision": 0.07077063,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.063596494,
+          "precision": 0.0625,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.12041185,
+          "precision": 0.04991832,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.068196535,
+          "precision": 0.044690553,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.068196535,
+          "precision": 0.044690553,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.068196535,
+          "precision": 0.044690553,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.068196535,
+          "precision": 0.044690553,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "32",
-      "Precision": 0.028169014,
-      "Recall": 0.8666667,
-      "RPrecision": 0.16666667,
-      "MRR": 0.5,
+      "queryID": "32",
+      "precision": 0.028169014,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.3,
+      "recall": 0.8666667,
+      "rp": 0.16666667,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.42857143,
+          "precision": 0.375,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.42857143,
+          "precision": 0.375,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.17142858,
+          "precision": 0.15,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.053892214,
+          "precision": 0.05027933,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.036474165,
+          "precision": 0.034582134,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.029239766,
+          "precision": 0.029469548,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.030664396,
+          "precision": 0.031358887,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.031019202,
+          "precision": 0.030882353,
           "interpolated": false
         },
         {
@@ -2038,262 +2103,272 @@
       ]
     },
     {
-      "QueryID": "33",
-      "Precision": 0.124668434,
-      "Recall": 0.8245614,
-      "RPrecision": 0.45614034,
-      "MRR": 1.0,
+      "queryID": "33",
+      "precision": 0.124668434,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.6,
+      "recall": 0.8245614,
+      "rp": 0.45614034,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.775,
+          "precision": 0.85,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.775,
+          "precision": 0.85,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.5431373,
+          "precision": 0.6408669,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.3707384,
+          "precision": 0.54648954,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.38647524,
+          "precision": 0.57578945,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.98309135,
+          "precision": 0.4319853,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.48727888,
+          "precision": 0.28311828,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.68132484,
+          "precision": 0.22489782,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.37957644,
+          "precision": 0.12586784,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.37957644,
+          "precision": 0.12586784,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.37957644,
+          "precision": 0.12586784,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "34",
-      "Precision": 0.082914576,
-      "Recall": 0.84615386,
-      "RPrecision": 0.43589744,
-      "MRR": 0.5,
+      "queryID": "34",
+      "precision": 0.082914576,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.5,
+      "recall": 0.84615386,
+      "rp": 0.43589744,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.5,
+          "precision": 0.57428575,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.5,
+          "precision": 0.57428575,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.554359,
+          "precision": 0.49313724,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.28707686,
+          "precision": 0.46655518,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.73854166,
+          "precision": 0.45416668,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.95188594,
+          "precision": 0.40212768,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 3.371337,
+          "precision": 0.28465867,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.6372181,
+          "precision": 0.19653098,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.95001364,
+          "precision": 0.10317778,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.95001364,
+          "precision": 0.10317778,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.95001364,
+          "precision": 0.10317778,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "35",
-      "Precision": 0.018832391,
-      "Recall": 0.71428573,
-      "RPrecision": 0.21428572,
-      "MRR": 0.16666667,
+      "queryID": "35",
+      "precision": 0.019120459,
+      "precisionAt5": 0.0,
+      "precisionAt10": 0.1,
+      "recall": 0.71428573,
+      "rp": 0.21428572,
+      "mrr": 0.16666667,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.17272727,
+          "precision": 0.16153847,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.17272727,
+          "precision": 0.16153847,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.14090909,
+          "precision": 0.2021978,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.20606062,
+          "precision": 0.18463902,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.20606062,
+          "precision": 0.14451613,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.061946902,
+          "precision": 0.05785124,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.2862712,
+          "precision": 0.047174443,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.09799529,
+          "precision": 0.020701775,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.09799529,
+          "precision": 0.020701775,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.09799529,
+          "precision": 0.020701775,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.09799529,
+          "precision": 0.020701775,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "36",
-      "Precision": 0.016513761,
-      "Recall": 1.0,
-      "RPrecision": 0.11111111,
-      "MRR": 1.0,
+      "queryID": "36",
+      "precision": 0.016885553,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 1.0,
+      "rp": 0.11111111,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 1.0818182,
+          "precision": 0.34545457,
           "interpolated": true
         },
         {
           "recall": 0.2,
-          "precision": 1.0818182,
+          "precision": 0.34545457,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.12797204,
+          "precision": 0.21608391,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.5653846,
+          "precision": 0.1375907,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.061513882,
+          "precision": 0.07345014,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.061116487,
+          "precision": 0.07402597,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.09145369,
+          "precision": 0.074171625,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.27891123,
+          "precision": 0.06033645,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.22201931,
+          "precision": 0.03768856,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.016513761,
+          "precision": 0.016885553,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "37",
-      "Precision": 0.120567374,
-      "Recall": 0.86734694,
-      "RPrecision": 0.47959185,
-      "MRR": 1.0,
+      "queryID": "37",
+      "precision": 0.120567374,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.9,
+      "recall": 0.86734694,
+      "rp": 0.46938777,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -2307,258 +2382,266 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.93718517,
+          "precision": 0.7367521,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 2.1232617,
+          "precision": 0.70166665,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 3.87609,
+          "precision": 0.5632325,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.47115386,
+          "precision": 0.46666667,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.6072669,
+          "precision": 0.29109818,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 1.8816204,
+          "precision": 0.2198267,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.056174845,
+          "precision": 0.14996052,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.056174845,
+          "precision": 0.14996052,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.056174845,
+          "precision": 0.14996052,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "38",
-      "Precision": 0.048387095,
-      "Recall": 0.3962264,
-      "RPrecision": 0.11320755,
-      "MRR": 0.25,
+      "queryID": "38",
+      "precision": 0.048387095,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 0.3962264,
+      "rp": 0.094339624,
+      "mrr": 0.2,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.10126996,
+          "precision": 0.103007525,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.10126996,
+          "precision": 0.103007525,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.096983984,
+          "precision": 0.05838603,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": true
         },
         {
           "recall": 0.5,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": true
         },
         {
           "recall": 0.6,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": true
         },
         {
           "recall": 0.7,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": true
         },
         {
           "recall": 0.8,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.043563895,
+          "precision": 0.04518247,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "39",
-      "Precision": 0.17282127,
-      "Recall": 0.7222222,
-      "RPrecision": 0.35185185,
-      "MRR": 0.5,
+      "queryID": "39",
+      "precision": 0.17282127,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.3,
+      "recall": 0.7222222,
+      "rp": 0.35185185,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.46015874,
+          "precision": 0.48502165,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.46015874,
+          "precision": 0.48502165,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.5,
+          "precision": 0.5030769,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.78839755,
+          "precision": 0.41757357,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 1.4801412,
+          "precision": 0.28552172,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.2334294,
+          "precision": 0.23893805,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.0792698,
+          "precision": 0.22385933,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.07759812,
+          "precision": 0.17505328,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.07759812,
+          "precision": 0.17505328,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.07759812,
+          "precision": 0.17505328,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.07759812,
+          "precision": 0.17505328,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "40",
-      "Precision": 0.13773148,
-      "Recall": 0.8150685,
-      "RPrecision": 0.21232876,
-      "MRR": 1.0,
+      "queryID": "40",
+      "precision": 0.13773148,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.5,
+      "recall": 0.8150685,
+      "rp": 0.20547946,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.31194445,
+          "precision": 0.30923912,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.31194445,
+          "precision": 0.30923912,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.4140097,
+          "precision": 0.22905482,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.14580646,
+          "precision": 0.19890736,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.069378816,
+          "precision": 0.18136539,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.18387909,
+          "precision": 0.18814433,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.7096756,
+          "precision": 0.1807668,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.07962012,
+          "precision": 0.15131725,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.33983672,
+          "precision": 0.1386915,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.33983672,
+          "precision": 0.1386915,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.33983672,
+          "precision": 0.1386915,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "41",
-      "Precision": 0.014537903,
-      "Recall": 0.93333334,
-      "RPrecision": 0.2,
-      "MRR": 0.33333334,
+      "queryID": "41",
+      "precision": 0.014537903,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.3,
+      "recall": 0.93333334,
+      "rp": 0.2,
+      "mrr": 0.25,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.2777778,
+          "precision": 0.23611112,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.2777778,
+          "precision": 0.23611112,
           "interpolated": false
         },
         {
@@ -2568,52 +2651,54 @@
         },
         {
           "recall": 0.3,
-          "precision": 0.16666667,
+          "precision": 0.16876751,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.1764706,
+          "precision": 0.14634146,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.055071212,
+          "precision": 0.06979167,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.056962024,
+          "precision": 0.057692308,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.014270788,
+          "precision": 0.03171778,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.025104603,
+          "precision": 0.025695931,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.04919228,
+          "precision": 0.01574353,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.04919228,
+          "precision": 0.01574353,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "42",
-      "Precision": 0.04569607,
-      "Recall": 0.9148936,
-      "RPrecision": 0.25531915,
-      "MRR": 1.0,
+      "queryID": "42",
+      "precision": 0.04569607,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.9,
+      "recall": 0.9148936,
+      "rp": 0.25531915,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -2627,130 +2712,134 @@
         },
         {
           "recall": 0.2,
-          "precision": 2.2285717,
+          "precision": 0.88571435,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.8907353,
+          "precision": 0.1360446,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.012892883,
+          "precision": 0.0440006,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.036511514,
+          "precision": 0.04589366,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.022843195,
+          "precision": 0.041250374,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.016426772,
+          "precision": 0.044366475,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.05921699,
+          "precision": 0.043765835,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.012292288,
+          "precision": 0.045085553,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.012292288,
+          "precision": 0.045085553,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "43",
-      "Precision": 0.15017667,
-      "Recall": 0.86734694,
-      "RPrecision": 0.36734694,
-      "MRR": 0.25,
+      "queryID": "43",
+      "precision": 0.15017667,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 0.86734694,
+      "rp": 0.36734694,
+      "mrr": 0.25,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.42964426,
+          "precision": 0.47095236,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.42964426,
+          "precision": 0.47095236,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.541228,
+          "precision": 0.5211949,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.64718616,
+          "precision": 0.40507042,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.77011526,
+          "precision": 0.3477477,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.31012657,
+          "precision": 0.30246913,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 1.014477,
+          "precision": 0.26072124,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.13459344,
+          "precision": 0.17932501,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.5971736,
+          "precision": 0.15995057,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.5971736,
+          "precision": 0.15995057,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.5971736,
+          "precision": 0.15995057,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "44",
-      "Precision": 0.15357968,
-      "Recall": 0.95,
-      "RPrecision": 0.45714286,
-      "MRR": 1.0,
+      "queryID": "44",
+      "precision": 0.15357968,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.4,
+      "recall": 0.95,
+      "rp": 0.45714286,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.5185185,
+          "precision": 0.53846157,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.5185185,
+          "precision": 0.53846157,
           "interpolated": false
         },
         {
@@ -2760,52 +2849,54 @@
         },
         {
           "recall": 0.3,
-          "precision": 0.64615387,
+          "precision": 0.61764705,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.55445546,
+          "precision": 0.5436893,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.44871795,
+          "precision": 0.43209878,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.3800905,
+          "precision": 0.37333333,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.25063938,
+          "precision": 0.25454545,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.18983051,
+          "precision": 0.19444445,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.18367347,
+          "precision": 0.18181819,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.18367347,
+          "precision": 0.18181819,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "45",
-      "Precision": 0.026836159,
-      "Recall": 0.95,
-      "RPrecision": 0.2,
-      "MRR": 0.33333334,
+      "queryID": "45",
+      "precision": 0.026573427,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.2,
+      "recall": 0.95,
+      "rp": 0.2,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -2819,22 +2910,22 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.30769232,
+          "precision": 0.2857143,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.1764706,
+          "precision": 0.18181819,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.10666667,
+          "precision": 0.1,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.10204082,
+          "precision": 0.094339624,
           "interpolated": false
         },
         {
@@ -2844,32 +2935,34 @@
         },
         {
           "recall": 0.7,
-          "precision": 0.068292685,
+          "precision": 0.067307696,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.05498282,
+          "precision": 0.053333335,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.055045873,
+          "precision": 0.052785926,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.055045873,
+          "precision": 0.052785926,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "46",
-      "Precision": 0.016528925,
-      "Recall": 0.7777778,
-      "RPrecision": 0.16666667,
-      "MRR": 1.0,
+      "queryID": "46",
+      "precision": 0.016528925,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 0.7777778,
+      "rp": 0.16666667,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -2883,121 +2976,125 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.90800005,
+          "precision": 0.24599999,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.050649367,
+          "precision": 0.08038709,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.05062863,
+          "precision": 0.07820513,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.0927835,
+          "precision": 0.09,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.16604859,
+          "precision": 0.046438336,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.12880108,
+          "precision": 0.023547444,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.12880108,
+          "precision": 0.023547444,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.12880108,
+          "precision": 0.023547444,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.12880108,
+          "precision": 0.023547444,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "47",
-      "Precision": 0.057026476,
-      "Recall": 0.93333334,
-      "RPrecision": 0.11666667,
-      "MRR": 0.0,
+      "queryID": "47",
+      "precision": 0.057026476,
+      "precisionAt5": 0.0,
+      "precisionAt10": 0.0,
+      "recall": 0.93333334,
+      "rp": 0.11666667,
+      "mrr": 0.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.15,
+          "precision": 0.16666667,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.15,
+          "precision": 0.16666667,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.0952381,
+          "precision": 0.09756097,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.0989011,
+          "precision": 0.10055866,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.0754717,
+          "precision": 0.0776699,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.06818182,
+          "precision": 0.06928407,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.06498195,
+          "precision": 0.06642067,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.06763285,
+          "precision": 0.06807131,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.06685237,
+          "precision": 0.06703911,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.062427744,
+          "precision": 0.06214039,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.062427744,
+          "precision": 0.06214039,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "48",
-      "Precision": 0.0456621,
-      "Recall": 1.0,
-      "RPrecision": 0.26666668,
-      "MRR": 1.0,
+      "queryID": "48",
+      "precision": 0.046224963,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.4,
+      "recall": 1.0,
+      "rp": 0.23333333,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -3011,7 +3108,7 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.46153846,
+          "precision": 0.42857143,
           "interpolated": false
         },
         {
@@ -3021,47 +3118,49 @@
         },
         {
           "recall": 0.4,
-          "precision": 0.18181819,
+          "precision": 0.16901408,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.1764706,
+          "precision": 0.16483517,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.16216215,
+          "precision": 0.15384616,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.12650603,
+          "precision": 0.1160221,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.11594203,
+          "precision": 0.11214953,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.062068965,
+          "precision": 0.061784897,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.0456621,
+          "precision": 0.046224963,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "49",
-      "Precision": 0.036919832,
-      "Recall": 0.9722222,
-      "RPrecision": 0.3611111,
-      "MRR": 1.0,
+      "queryID": "49",
+      "precision": 0.036919832,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.8,
+      "recall": 0.9722222,
+      "rp": 0.3611111,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -3075,57 +3174,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.82777774,
+          "precision": 0.87777776,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 2.1723087,
+          "precision": 0.5440476,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.8000004,
+          "precision": 0.30205128,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.19354838,
+          "precision": 0.1875,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.8749,
+          "precision": 0.10737559,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.31246355,
+          "precision": 0.075697966,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.040320296,
+          "precision": 0.052230656,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.03241715,
+          "precision": 0.04216315,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.03241715,
+          "precision": 0.04216315,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "50",
-      "Precision": 0.02948718,
-      "Recall": 0.92,
-      "RPrecision": 0.24,
-      "MRR": 1.0,
+      "queryID": "50",
+      "precision": 0.029374203,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.5,
+      "recall": 0.92,
+      "rp": 0.24,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -3144,116 +3245,120 @@
         },
         {
           "recall": 0.3,
-          "precision": 0.55515885,
+          "precision": 0.16643322,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.0990099,
+          "precision": 0.097087376,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.061204158,
+          "precision": 0.05815718,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.05514706,
+          "precision": 0.057471264,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.038163334,
+          "precision": 0.052076317,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.030075189,
+          "precision": 0.030120483,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.082434356,
+          "precision": 0.03065227,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.082434356,
+          "precision": 0.03065227,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "51",
-      "Precision": 0.21334681,
-      "Recall": 0.8755187,
-      "RPrecision": 0.35684648,
-      "MRR": 1.0,
+      "queryID": "51",
+      "precision": 0.21399595,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.7,
+      "recall": 0.8755187,
+      "rp": 0.3526971,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.5227567,
+          "precision": 0.5578812,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.5227567,
+          "precision": 0.5578812,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.46227202,
+          "precision": 0.41358784,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.20748256,
+          "precision": 0.36041585,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.17565653,
+          "precision": 0.35130987,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.42425025,
+          "precision": 0.3046765,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.38810346,
+          "precision": 0.28454012,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.2830887,
+          "precision": 0.24470508,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.219725,
+          "precision": 0.2335835,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.219725,
+          "precision": 0.2335835,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.219725,
+          "precision": 0.2335835,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "52",
-      "Precision": 0.003241491,
-      "Recall": 1.0,
-      "RPrecision": 0.5,
-      "MRR": 1.0,
+      "queryID": "52",
+      "precision": 0.003236246,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 1.0,
+      "rp": 0.5,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -3267,37 +3372,39 @@
         },
         {
           "recall": 0.6,
-          "precision": 1.7974069,
+          "precision": 0.8006472,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 1.7974069,
+          "precision": 0.6012945,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 1.7974069,
+          "precision": 0.40194172,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 1.7974069,
+          "precision": 0.20258904,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.003241491,
+          "precision": 0.003236246,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "53",
-      "Precision": 0.0368,
-      "Recall": 1.0,
-      "RPrecision": 0.3478261,
-      "MRR": 1.0,
+      "queryID": "53",
+      "precision": 0.036565978,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.4,
+      "recall": 1.0,
+      "rp": 0.3043478,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -3311,57 +3418,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.3716667,
+          "precision": 0.47857141,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.5852274,
+          "precision": 0.32165772,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.33333334,
+          "precision": 0.3311828,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.37134707,
+          "precision": 0.34834558,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 1.1218624,
+          "precision": 0.2686363,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.08346118,
+          "precision": 0.22023325,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.46407345,
+          "precision": 0.19319113,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 2.08902,
+          "precision": 0.09058885,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.0368,
+          "precision": 0.036565978,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "54",
-      "Precision": 0.0640608,
-      "Recall": 0.9516129,
-      "RPrecision": 0.43548387,
-      "MRR": 1.0,
+      "queryID": "54",
+      "precision": 0.0640608,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.9,
+      "recall": 0.9516129,
+      "rp": 0.43548387,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -3375,170 +3484,174 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.9111112,
+          "precision": 0.7558824,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.49753702,
+          "precision": 0.65977013,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.853968,
+          "precision": 0.5661734,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.42465752,
+          "precision": 0.3974359,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.41584226,
+          "precision": 0.2875463,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.056677982,
+          "precision": 0.19017813,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.33420312,
+          "precision": 0.10557627,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.2831921,
+          "precision": 0.078882866,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.2831921,
+          "precision": 0.078882866,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "55",
-      "Precision": 0.026796589,
-      "Recall": 0.9166667,
-      "RPrecision": 0.041666668,
-      "MRR": 0.25,
+      "queryID": "55",
+      "precision": 0.026796589,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 0.9166667,
+      "rp": 0.041666668,
+      "mrr": 0.25,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.046954595,
+          "precision": 0.048910413,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.046954595,
+          "precision": 0.048910413,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.05345561,
+          "precision": 0.05541856,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.1496431,
+          "precision": 0.051081378,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.018926566,
+          "precision": 0.033493336,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.026548672,
+          "precision": 0.026726058,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.007170601,
+          "precision": 0.023501841,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.030399507,
+          "precision": 0.025230166,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.01931773,
+          "precision": 0.025852447,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.026583456,
+          "precision": 0.02679224,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.026583456,
+          "precision": 0.02679224,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "56",
-      "Precision": 0.037470724,
-      "Recall": 1.0,
-      "RPrecision": 0.125,
-      "MRR": 0.33333334,
+      "queryID": "56",
+      "precision": 0.037470724,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 1.0,
+      "rp": 0.125,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.30153847,
+          "precision": 0.2848485,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.30153847,
+          "precision": 0.2848485,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.059773996,
+          "precision": 0.10974359,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.21035796,
+          "precision": 0.110217385,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.21962266,
+          "precision": 0.061655745,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.04347826,
+          "precision": 0.044692736,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.06739931,
+          "precision": 0.04185284,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.022361137,
+          "precision": 0.034316733,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.012272738,
+          "precision": 0.035791717,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.026356615,
+          "precision": 0.03721717,
           "interpolated": false
         },
         {
@@ -3549,60 +3662,62 @@
       ]
     },
     {
-      "QueryID": "57",
-      "Precision": 0.05561614,
-      "Recall": 1.0,
-      "RPrecision": 0.5882353,
-      "MRR": 1.0,
+      "queryID": "57",
+      "precision": 0.05561614,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.7,
+      "recall": 1.0,
+      "rp": 0.5686275,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.8357143,
+          "precision": 0.9857143,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.8357143,
+          "precision": 0.9857143,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.68846166,
+          "precision": 0.7528846,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.9749998,
+          "precision": 0.71818185,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.5355176,
+          "precision": 0.68476087,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.8150001,
+          "precision": 0.6893275,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.94084996,
+          "precision": 0.5645969,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 1.8508021,
+          "precision": 0.3800489,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 1.8085982,
+          "precision": 0.31374165,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 1.3762386,
+          "precision": 0.24113503,
           "interpolated": false
         },
         {
@@ -3613,84 +3728,88 @@
       ]
     },
     {
-      "QueryID": "58",
-      "Precision": 0.09966777,
-      "Recall": 0.94736844,
-      "RPrecision": 0.42105263,
-      "MRR": 1.0,
+      "queryID": "58",
+      "precision": 0.09966777,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.7,
+      "recall": 0.94736844,
+      "rp": 0.42105263,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.5992063,
+          "precision": 0.6155462,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.5992063,
+          "precision": 0.6155462,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.5277778,
+          "precision": 0.5588235,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.35656613,
+          "precision": 0.4957627,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.4691358,
+          "precision": 0.45238096,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.1664611,
+          "precision": 0.3518437,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.26635513,
+          "precision": 0.2614679,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.07207751,
+          "precision": 0.21010782,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.1529175,
+          "precision": 0.1557377,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.04126312,
+          "precision": 0.12445308,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.04126312,
+          "precision": 0.12445308,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "59",
-      "Precision": 0.1341719,
-      "Recall": 0.8827586,
-      "RPrecision": 0.26206896,
-      "MRR": 1.0,
+      "queryID": "59",
+      "precision": 0.1341719,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.8827586,
+      "rp": 0.26206896,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.25211737,
+          "precision": 0.25227273,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.25211737,
+          "precision": 0.25227273,
           "interpolated": false
         },
         {
@@ -3700,116 +3819,120 @@
         },
         {
           "recall": 0.3,
-          "precision": 0.30821392,
+          "precision": 0.24437395,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.21245421,
+          "precision": 0.21969697,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.21696486,
+          "precision": 0.21045047,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.15789473,
+          "precision": 0.15875912,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.07505469,
+          "precision": 0.1451032,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.1433869,
+          "precision": 0.14285715,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.1433869,
+          "precision": 0.14285715,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.1433869,
+          "precision": 0.14285715,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "60",
-      "Precision": 0.03965517,
-      "Recall": 0.6764706,
-      "RPrecision": 0.0882353,
-      "MRR": 1.0,
+      "queryID": "60",
+      "precision": 0.03965517,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.6764706,
+      "rp": 0.0882353,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.108255155,
+          "precision": 0.113675214,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.108255155,
+          "precision": 0.113675214,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.067719296,
+          "precision": 0.06703297,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.028896533,
+          "precision": 0.06928664,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.21129827,
+          "precision": 0.07248952,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.040865384,
+          "precision": 0.04197531,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.03764961,
+          "precision": 0.04445441,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.03764961,
+          "precision": 0.04445441,
           "interpolated": true
         },
         {
           "recall": 0.8,
-          "precision": 0.03764961,
+          "precision": 0.04445441,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.03764961,
+          "precision": 0.04445441,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.03764961,
+          "precision": 0.04445441,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "61",
-      "Precision": 0.07013301,
-      "Recall": 0.82857144,
-      "RPrecision": 0.2857143,
-      "MRR": 1.0,
+      "queryID": "61",
+      "precision": 0.07013301,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.8,
+      "recall": 0.82857144,
+      "rp": 0.2857143,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -3823,12 +3946,12 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.6086956,
+          "precision": 0.5833333,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.29166666,
+          "precision": 0.29577464,
           "interpolated": false
         },
         {
@@ -3838,170 +3961,176 @@
         },
         {
           "recall": 0.5,
-          "precision": 0.20958084,
+          "precision": 0.21341464,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.12537314,
+          "precision": 0.12727273,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.09607843,
+          "precision": 0.09533074,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.07188703,
+          "precision": 0.07387863,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.07188703,
+          "precision": 0.07387863,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.07188703,
+          "precision": 0.07387863,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "62",
-      "Precision": 0.13192347,
-      "Recall": 0.9097222,
-      "RPrecision": 0.30555555,
-      "MRR": 1.0,
+      "queryID": "62",
+      "precision": 0.13192347,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.8,
+      "recall": 0.9097222,
+      "rp": 0.3125,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.59,
+          "precision": 0.6218182,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.59,
+          "precision": 0.6218182,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.25268075,
+          "precision": 0.36088607,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.18871091,
+          "precision": 0.32590473,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.15414956,
+          "precision": 0.24234033,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.20224719,
+          "precision": 0.1978022,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.16074929,
+          "precision": 0.17944898,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.31346065,
+          "precision": 0.170964,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.16980892,
+          "precision": 0.15902774,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.095225275,
+          "precision": 0.13443941,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.095225275,
+          "precision": 0.13443941,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "63",
-      "Precision": 0.038709678,
-      "Recall": 0.7692308,
-      "RPrecision": 0.17948718,
-      "MRR": 1.0,
+      "queryID": "63",
+      "precision": 0.038709678,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.7692308,
+      "rp": 0.15384616,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.17307693,
+          "precision": 0.16153847,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.17307693,
+          "precision": 0.16153847,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.2082379,
+          "precision": 0.166605,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.19908543,
+          "precision": 0.1333617,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.17031509,
+          "precision": 0.061580595,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.06871563,
+          "precision": 0.041301675,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.08135611,
+          "precision": 0.041741278,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.079789646,
+          "precision": 0.041641477,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.079789646,
+          "precision": 0.041641477,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.079789646,
+          "precision": 0.041641477,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.079789646,
+          "precision": 0.041641477,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "64",
-      "Precision": 0.049638055,
-      "Recall": 0.96,
-      "RPrecision": 0.16,
-      "MRR": 0.25,
+      "queryID": "64",
+      "precision": 0.049638055,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.2,
+      "recall": 0.96,
+      "rp": 0.16,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4015,185 +4144,191 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.16949153,
+          "precision": 0.1754386,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.16129032,
+          "precision": 0.17045455,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.11173184,
+          "precision": 0.11111111,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.080906145,
+          "precision": 0.07692308,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.08196721,
+          "precision": 0.08287293,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.07526882,
+          "precision": 0.075431034,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.065252855,
+          "precision": 0.06622516,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.0608931,
+          "precision": 0.06081081,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.0608931,
+          "precision": 0.06081081,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "65",
-      "Precision": 0.09436008,
-      "Recall": 0.9255319,
-      "RPrecision": 0.28723404,
-      "MRR": 0.5,
+      "queryID": "65",
+      "precision": 0.09436008,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.3,
+      "recall": 0.9255319,
+      "rp": 0.28723404,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.32890445,
+          "precision": 0.34285715,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.32890445,
+          "precision": 0.34285715,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.30521658,
+          "precision": 0.36026183,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.13978022,
+          "precision": 0.2848821,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.1739521,
+          "precision": 0.22406787,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.2025862,
+          "precision": 0.19502075,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.14696115,
+          "precision": 0.18420297,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.14856927,
+          "precision": 0.13117985,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.41588676,
+          "precision": 0.12312794,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.14150274,
+          "precision": 0.10703429,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.14150274,
+          "precision": 0.10703429,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "66",
-      "Precision": 0.05666317,
-      "Recall": 0.85714287,
-      "RPrecision": 0.1904762,
-      "MRR": 0.33333334,
+      "queryID": "66",
+      "precision": 0.05666317,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.4,
+      "recall": 0.85714287,
+      "rp": 0.20634921,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.42352942,
+          "precision": 0.4166667,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.42352942,
+          "precision": 0.4166667,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.266087,
+          "precision": 0.20580645,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.38605496,
+          "precision": 0.14326411,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.13737443,
+          "precision": 0.13252689,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.113719776,
+          "precision": 0.0871566,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.1361041,
+          "precision": 0.07979089,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.014386274,
+          "precision": 0.07110569,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.07476202,
+          "precision": 0.06306215,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.07476202,
+          "precision": 0.06306215,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.07476202,
+          "precision": 0.06306215,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "67",
-      "Precision": 0.016331658,
-      "Recall": 0.9285714,
-      "RPrecision": 0.2857143,
-      "MRR": 0.25,
+      "queryID": "67",
+      "precision": 0.016331658,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 0.9285714,
+      "rp": 0.2857143,
+      "mrr": 0.25,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4207,121 +4342,125 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.44,
+          "precision": 0.38,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.62750006,
+          "precision": 0.32916668,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.5375,
+          "precision": 0.28152174,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.14893617,
+          "precision": 0.14285715,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.14338465,
+          "precision": 0.121214576,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.11633731,
+          "precision": 0.12495003,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.017517472,
+          "precision": 0.032101803,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.22010486,
+          "precision": 0.023282144,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.22010486,
+          "precision": 0.023282144,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "68",
-      "Precision": 0.04799107,
-      "Recall": 0.95555556,
-      "RPrecision": 0.08888889,
-      "MRR": 1.0,
+      "queryID": "68",
+      "precision": 0.04799107,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 0.95555556,
+      "rp": 0.11111111,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.10208333,
+          "precision": 0.12461301,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.10208333,
+          "precision": 0.12461301,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.048387095,
+          "precision": 0.04945055,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.122107126,
+          "precision": 0.04508905,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.04511278,
+          "precision": 0.045,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.0641021,
+          "precision": 0.047317557,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.04712042,
+          "precision": 0.04695652,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.036821105,
+          "precision": 0.049603287,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.05,
+          "precision": 0.051355205,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.019677334,
+          "precision": 0.048012592,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.019677334,
+          "precision": 0.048012592,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "69",
-      "Precision": 0.018181818,
-      "Recall": 0.8,
-      "RPrecision": 0.4,
-      "MRR": 1.0,
+      "queryID": "69",
+      "precision": 0.018867925,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.5,
+      "recall": 0.8,
+      "rp": 0.4,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4340,52 +4479,54 @@
         },
         {
           "recall": 0.3,
-          "precision": 2.1111112,
+          "precision": 0.75,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.4,
+          "precision": 0.46153846,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 1.2304962,
+          "precision": 0.2534314,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.024861878,
+          "precision": 0.02631579,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.055116855,
+          "precision": 0.022964625,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.018181818,
+          "precision": 0.018867925,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.018181818,
+          "precision": 0.018867925,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.018181818,
+          "precision": 0.018867925,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "70",
-      "Precision": 0.025796661,
-      "Recall": 1.0,
-      "RPrecision": 0.5882353,
-      "MRR": 1.0,
+      "queryID": "70",
+      "precision": 0.025757575,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.8,
+      "recall": 1.0,
+      "rp": 0.5294118,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4399,57 +4540,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.85833335,
+          "precision": 0.7166667,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.59642863,
+          "precision": 0.7178572,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.9650001,
+          "precision": 0.7722222,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.5051283,
+          "precision": 0.7461539,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 3.5685053,
+          "precision": 0.43142858,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 1.1340431,
+          "precision": 0.12705451,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.14778915,
+          "precision": 0.0743295,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.10920258,
+          "precision": 0.074898794,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.025796661,
+          "precision": 0.025757575,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "71",
-      "Precision": 0.0077021825,
-      "Recall": 1.0,
-      "RPrecision": 0.6666667,
-      "MRR": 1.0,
+      "queryID": "71",
+      "precision": 0.0076923077,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.4,
+      "recall": 1.0,
+      "rp": 0.6666667,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4468,7 +4611,7 @@
         },
         {
           "recall": 0.4,
-          "precision": 1.5600001,
+          "precision": 0.84000003,
           "interpolated": false
         },
         {
@@ -4478,37 +4621,39 @@
         },
         {
           "recall": 0.6,
-          "precision": 0.44000006,
+          "precision": 0.64000005,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 2.9048107,
+          "precision": 0.5350057,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 2.9048107,
+          "precision": 0.14002222,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.011412408,
+          "precision": 0.008093645,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.0077021825,
+          "precision": 0.0076923077,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "72",
-      "Precision": 0.029953917,
-      "Recall": 1.0,
-      "RPrecision": 0.53846157,
-      "MRR": 0.5,
+      "queryID": "72",
+      "precision": 0.030444965,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.6,
+      "recall": 1.0,
+      "rp": 0.53846157,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4522,57 +4667,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.42999998,
+          "precision": 0.56,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.4866667,
+          "precision": 0.66,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.7174999,
+          "precision": 0.62,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.8892307,
+          "precision": 0.5692308,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 1.436264,
+          "precision": 0.37435898,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 1.5448273,
+          "precision": 0.20700458,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.0642611,
+          "precision": 0.044627026,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.06614704,
+          "precision": 0.044082355,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.029953917,
+          "precision": 0.030444965,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "73",
-      "Precision": 0.023633678,
-      "Recall": 0.8888889,
-      "RPrecision": 0.2777778,
-      "MRR": 0.5,
+      "queryID": "73",
+      "precision": 0.024502298,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.4,
+      "recall": 0.8888889,
+      "rp": 0.33333334,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4586,180 +4733,120 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.84999996,
+          "precision": 0.7,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.30197373,
+          "precision": 0.30980393,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.3727272,
+          "precision": 0.29259259,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.29032257,
+          "precision": 0.28125,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.84465647,
+          "precision": 0.1103448,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.32945526,
+          "precision": 0.08701299,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.15338248,
+          "precision": 0.030510904,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.15338248,
+          "precision": 0.030510904,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.15338248,
+          "precision": 0.030510904,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "74",
-      "Precision": 0.0073349634,
-      "Recall": 0.85714287,
-      "RPrecision": 0.2857143,
-      "MRR": 1.0,
+      "queryID": "74",
+      "precision": 0.0075,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.85714287,
+      "rp": 0.2857143,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 1.1800001,
+          "precision": 0.76,
           "interpolated": true
         },
         {
           "recall": 0.2,
-          "precision": 1.1800001,
+          "precision": 0.76,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.53000003,
+          "precision": 0.38307694,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.53000003,
+          "precision": 0.2646154,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.95461535,
+          "precision": 0.12304747,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.034605093,
+          "precision": 0.01422904,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.034605093,
+          "precision": 0.010390836,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.019128872,
+          "precision": 0.008437008,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.019128872,
+          "precision": 0.008437008,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.019128872,
+          "precision": 0.008437008,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "75",
-      "Precision": 0.024183797,
-      "Recall": 0.95238096,
-      "RPrecision": 0.47619048,
-      "MRR": 1.0,
-      "PxRTable": [
-        {
-          "recall": 0.0,
-          "precision": 1.0,
-          "interpolated": true
-        },
-        {
-          "recall": 0.1,
-          "precision": 1.0,
-          "interpolated": false
-        },
-        {
-          "recall": 0.2,
-          "precision": 1.3166667,
-          "interpolated": false
-        },
-        {
-          "recall": 0.3,
-          "precision": 0.6416666,
-          "interpolated": false
-        },
-        {
-          "recall": 0.4,
-          "precision": 1.2253249,
-          "interpolated": false
-        },
-        {
-          "recall": 0.5,
-          "precision": 4.1953316,
-          "interpolated": false
-        },
-        {
-          "recall": 0.6,
-          "precision": 0.48470056,
-          "interpolated": false
-        },
-        {
-          "recall": 0.7,
-          "precision": 0.23288353,
-          "interpolated": false
-        },
-        {
-          "recall": 0.8,
-          "precision": 0.08030706,
-          "interpolated": false
-        },
-        {
-          "recall": 0.9,
-          "precision": 0.30013412,
-          "interpolated": false
-        },
-        {
-          "recall": 1.0,
-          "precision": 0.30013412,
-          "interpolated": true
-        }
-      ]
-    },
-    {
-      "QueryID": "76",
-      "Precision": 0.012591816,
-      "Recall": 0.7058824,
-      "RPrecision": 0.29411766,
-      "MRR": 1.0,
+      "queryID": "75",
+      "precision": 0.024067389,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.7,
+      "recall": 0.95238096,
+      "rp": 0.47619048,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -4773,313 +4860,389 @@
         },
         {
           "recall": 0.2,
-          "precision": 1.0085715,
+          "precision": 0.94285715,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.44375,
+          "precision": 0.7583333,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 1.3205584,
+          "precision": 0.71328676,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.07980178,
+          "precision": 0.4479168,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.039458856,
+          "precision": 0.13804714,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.006182294,
+          "precision": 0.068316154,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.006182294,
-          "interpolated": true
+          "precision": 0.055766877,
+          "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.006182294,
-          "interpolated": true
+          "precision": 0.026393726,
+          "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.006182294,
+          "precision": 0.026393726,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "77",
-      "Precision": 0.070891514,
-      "Recall": 0.80487806,
-      "RPrecision": 0.13414635,
-      "MRR": 1.0,
+      "queryID": "76",
+      "precision": 0.012591816,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.3,
+      "recall": 0.7058824,
+      "rp": 0.29411766,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.1472253,
+          "precision": 1.0,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.1472253,
+          "precision": 1.0,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.121363975,
+          "precision": 0.4666667,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.07369113,
+          "precision": 0.30852273,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.08813191,
+          "precision": 0.07807486,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.08401639,
+          "precision": 0.021085234,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.24853547,
+          "precision": 0.014515119,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.082273446,
+          "precision": 0.012529586,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.039379142,
-          "interpolated": false
+          "precision": 0.012529586,
+          "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.039379142,
+          "precision": 0.012529586,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.039379142,
+          "precision": 0.012529586,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "78",
-      "Precision": 0.074579835,
-      "Recall": 0.9220779,
-      "RPrecision": 0.23376623,
-      "MRR": 0.25,
+      "queryID": "77",
+      "precision": 0.070891514,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.80487806,
+      "rp": 0.12195122,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.2914074,
+          "precision": 0.15527272,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.2914074,
+          "precision": 0.15527272,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.3228484,
+          "precision": 0.10640483,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.2016688,
+          "precision": 0.116908565,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.53354156,
+          "precision": 0.109260224,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.50616264,
+          "precision": 0.08282828,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.034703232,
+          "precision": 0.08162454,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.5391451,
+          "precision": 0.072439134,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.07852334,
+          "precision": 0.070673436,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.024756968,
-          "interpolated": false
+          "precision": 0.070673436,
+          "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.024756968,
+          "precision": 0.070673436,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "79",
-      "Precision": 0.042462844,
-      "Recall": 0.9302326,
-      "RPrecision": 0.18604651,
-      "MRR": 0.5,
+      "queryID": "78",
+      "precision": 0.074579835,
+      "precisionAt5": 0.0,
+      "precisionAt10": 0.1,
+      "recall": 0.9220779,
+      "rp": 0.23376623,
+      "mrr": 0.14285715,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.27307692,
+          "precision": 0.26141438,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.27307692,
+          "precision": 0.26141438,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.18318184,
+          "precision": 0.27514124,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.1474129,
+          "precision": 0.19796047,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.06837769,
+          "precision": 0.18876457,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.08011876,
+          "precision": 0.1620137,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.30564073,
+          "precision": 0.1302118,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.014614858,
+          "precision": 0.109628916,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.050729103,
+          "precision": 0.087375276,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.06268562,
+          "precision": 0.07761166,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.06268562,
+          "precision": 0.07761166,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "80",
-      "Precision": 0.096,
-      "Recall": 0.7058824,
-      "RPrecision": 0.4117647,
-      "MRR": 1.0,
+      "queryID": "79",
+      "precision": 0.042462844,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 0.9302326,
+      "rp": 0.1627907,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.62666667,
+          "precision": 0.27094018,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.62666667,
+          "precision": 0.27094018,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.50545466,
+          "precision": 0.17254902,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.84058833,
+          "precision": 0.19496584,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 2.038363,
+          "precision": 0.1641817,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.27419356,
+          "precision": 0.14285715,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.7730239,
+          "precision": 0.09693735,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 1.2561473,
+          "precision": 0.06038064,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 1.2561473,
-          "interpolated": true
+          "precision": 0.051464677,
+          "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 1.2561473,
-          "interpolated": true
+          "precision": 0.043028574,
+          "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 1.2561473,
+          "precision": 0.043028574,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "81",
-      "Precision": 0.03013393,
-      "Recall": 0.96428573,
-      "RPrecision": 0.21428572,
-      "MRR": 1.0,
+      "queryID": "80",
+      "precision": 0.096,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.5,
+      "recall": 0.7058824,
+      "rp": 0.38235295,
+      "mrr": 1.0,
+      "PxRTable": [
+        {
+          "recall": 0.0,
+          "precision": 0.5885714,
+          "interpolated": true
+        },
+        {
+          "recall": 0.1,
+          "precision": 0.5885714,
+          "interpolated": false
+        },
+        {
+          "recall": 0.2,
+          "precision": 0.57575756,
+          "interpolated": false
+        },
+        {
+          "recall": 0.3,
+          "precision": 0.6157895,
+          "interpolated": false
+        },
+        {
+          "recall": 0.4,
+          "precision": 0.45000002,
+          "interpolated": false
+        },
+        {
+          "recall": 0.5,
+          "precision": 0.25,
+          "interpolated": false
+        },
+        {
+          "recall": 0.6,
+          "precision": 0.22194569,
+          "interpolated": false
+        },
+        {
+          "recall": 0.7,
+          "precision": 0.10809257,
+          "interpolated": false
+        },
+        {
+          "recall": 0.8,
+          "precision": 0.10809257,
+          "interpolated": true
+        },
+        {
+          "recall": 0.9,
+          "precision": 0.10809257,
+          "interpolated": true
+        },
+        {
+          "recall": 1.0,
+          "precision": 0.10809257,
+          "interpolated": true
+        }
+      ]
+    },
+    {
+      "queryID": "81",
+      "precision": 0.03013393,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.5,
+      "recall": 0.96428573,
+      "rp": 0.21428572,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5093,185 +5256,191 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.83492076,
+          "precision": 0.549495,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.24129911,
+          "precision": 0.13244048,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.2917052,
+          "precision": 0.07916666,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.054474708,
+          "precision": 0.05204461,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.019453818,
+          "precision": 0.039712705,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.13802427,
+          "precision": 0.035355974,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.03380179,
+          "precision": 0.03351351,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.076084256,
+          "precision": 0.030925116,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.076084256,
+          "precision": 0.030925116,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "82",
-      "Precision": 0.06356413,
-      "Recall": 0.9032258,
-      "RPrecision": 0.22580644,
-      "MRR": 0.2,
+      "queryID": "82",
+      "precision": 0.06334842,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.2,
+      "recall": 0.9032258,
+      "rp": 0.20967741,
+      "mrr": 0.2,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.30863157,
+          "precision": 0.33030304,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.30863157,
+          "precision": 0.33030304,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.14020205,
+          "precision": 0.2278788,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.2067974,
+          "precision": 0.20803335,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.24360803,
+          "precision": 0.21379732,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.17127071,
+          "precision": 0.1693989,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.20785093,
+          "precision": 0.16117428,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.21922341,
+          "precision": 0.11083938,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.29672083,
+          "precision": 0.07991076,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.3695535,
+          "precision": 0.06470935,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.3695535,
+          "precision": 0.06470935,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "83",
-      "Precision": 0.03625731,
-      "Recall": 0.96875,
-      "RPrecision": 0.21875,
-      "MRR": 1.0,
+      "queryID": "83",
+      "precision": 0.035962876,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 0.96875,
+      "rp": 0.21875,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.40952381,
+          "precision": 0.46666667,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.40952381,
+          "precision": 0.46666667,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.15815379,
+          "precision": 0.23846154,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.16945456,
+          "precision": 0.19764706,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.12687783,
+          "precision": 0.19214696,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.16666667,
+          "precision": 0.1632653,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.9044366,
+          "precision": 0.122046776,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.21705714,
+          "precision": 0.058520462,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.009819988,
+          "precision": 0.055575144,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.022493789,
+          "precision": 0.039998133,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.022493789,
+          "precision": 0.039998133,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "84",
-      "Precision": 0.021613833,
-      "Recall": 0.9375,
-      "RPrecision": 0.4375,
-      "MRR": 1.0,
+      "queryID": "84",
+      "precision": 0.021520803,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.6,
+      "recall": 0.9375,
+      "rp": 0.4375,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5295,7 +5464,7 @@
         },
         {
           "recall": 0.4,
-          "precision": 2.7035716,
+          "precision": 0.6892857,
           "interpolated": false
         },
         {
@@ -5305,229 +5474,237 @@
         },
         {
           "recall": 0.6,
-          "precision": 1.1726707,
+          "precision": 0.3098901,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.21410261,
+          "precision": 0.22777778,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 2.3461375,
+          "precision": 0.06615631,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.10869531,
+          "precision": 0.025509732,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.10869531,
+          "precision": 0.025509732,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "85",
-      "Precision": 0.029966705,
-      "Recall": 0.87096775,
-      "RPrecision": 0.06451613,
-      "MRR": 0.0,
+      "queryID": "85",
+      "precision": 0.029966705,
+      "precisionAt5": 0.0,
+      "precisionAt10": 0.0,
+      "recall": 0.87096775,
+      "rp": 0.06451613,
+      "mrr": 0.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.07994152,
+          "precision": 0.09015152,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.07994152,
+          "precision": 0.09015152,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.056911573,
+          "precision": 0.080059186,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.20327067,
+          "precision": 0.08390662,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.02734188,
+          "precision": 0.06917872,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.012790497,
+          "precision": 0.053434435,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.008642454,
+          "precision": 0.04411636,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.09886213,
+          "precision": 0.036538463,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.11473612,
+          "precision": 0.031218123,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.11473612,
+          "precision": 0.031218123,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.11473612,
+          "precision": 0.031218123,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "86",
-      "Precision": 0.04936854,
-      "Recall": 0.9148936,
-      "RPrecision": 0.31914893,
-      "MRR": 1.0,
+      "queryID": "86",
+      "precision": 0.049199086,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 0.9148936,
+      "rp": 0.31914893,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.29819006,
+          "precision": 0.30446428,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.29819006,
+          "precision": 0.30446428,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.44818178,
+          "precision": 0.385,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.17727257,
+          "precision": 0.35641024,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.46837062,
+          "precision": 0.35879245,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.47858328,
+          "precision": 0.28315178,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.6477444,
+          "precision": 0.16357332,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.13053967,
+          "precision": 0.13083668,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.07917172,
+          "precision": 0.056217726,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.01820653,
+          "precision": 0.04851403,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.01820653,
+          "precision": 0.04851403,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "87",
-      "Precision": 0.037037037,
-      "Recall": 0.9736842,
-      "RPrecision": 0.15789473,
-      "MRR": 0.2,
+      "queryID": "87",
+      "precision": 0.037037037,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 0.9736842,
+      "rp": 0.13157895,
+      "mrr": 0.2,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.22573529,
+          "precision": 0.20842105,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.22573529,
+          "precision": 0.20842105,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.3016314,
+          "precision": 0.12982786,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.35631767,
+          "precision": 0.1218671,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.044597007,
+          "precision": 0.09145083,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.08154506,
+          "precision": 0.08085106,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.038809303,
+          "precision": 0.053617653,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.009727333,
+          "precision": 0.051891446,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.16772494,
+          "precision": 0.047509864,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.21368036,
+          "precision": 0.043432076,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.21368036,
+          "precision": 0.043432076,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "88",
-      "Precision": 0.013948498,
-      "Recall": 0.9285714,
-      "RPrecision": 0.21428572,
-      "MRR": 0.33333334,
+      "queryID": "88",
+      "precision": 0.013948498,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.3,
+      "recall": 0.9285714,
+      "rp": 0.21428572,
+      "mrr": 0.33333334,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5541,57 +5718,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.17555554,
+          "precision": 0.28444445,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.4403727,
+          "precision": 0.15878788,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.22057146,
+          "precision": 0.045416668,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.026819924,
+          "precision": 0.025547445,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.08357656,
+          "precision": 0.022887042,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.0060606143,
+          "precision": 0.018427422,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.025926407,
+          "precision": 0.01402964,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.002145918,
+          "precision": 0.013541513,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.002145918,
+          "precision": 0.013541513,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "89",
-      "Precision": 0.028099174,
-      "Recall": 1.0,
-      "RPrecision": 0.3529412,
-      "MRR": 1.0,
+      "queryID": "89",
+      "precision": 0.027868852,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.4,
+      "recall": 1.0,
+      "rp": 0.3529412,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5605,57 +5784,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 1.6500001,
+          "precision": 0.8,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.6345455,
+          "precision": 0.44659093,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.53578955,
+          "precision": 0.36973685,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.41712168,
+          "precision": 0.28348216,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.53388715,
+          "precision": 0.26621622,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.7107458,
+          "precision": 0.20500003,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.8107246,
+          "precision": 0.14639755,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.05247041,
+          "precision": 0.036458887,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.028099174,
+          "precision": 0.027868852,
           "interpolated": false
         }
       ]
     },
     {
-      "QueryID": "90",
-      "Precision": 0.066831686,
-      "Recall": 0.96428573,
-      "RPrecision": 0.53571427,
-      "MRR": 1.0,
+      "queryID": "90",
+      "precision": 0.06801008,
+      "precisionAt5": 1.0,
+      "precisionAt10": 0.9,
+      "recall": 0.96428573,
+      "rp": 0.53571427,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5674,12 +5855,12 @@
         },
         {
           "recall": 0.3,
-          "precision": 0.83111125,
+          "precision": 0.8933333,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.8641027,
+          "precision": 0.9179487,
           "interpolated": false
         },
         {
@@ -5689,101 +5870,105 @@
         },
         {
           "recall": 0.6,
-          "precision": 1.2728243,
+          "precision": 0.40516794,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.6303425,
+          "precision": 0.32688174,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 2.8438065,
+          "precision": 0.2607122,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 1.4312242,
+          "precision": 0.14233069,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 1.4312242,
+          "precision": 0.14233069,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "91",
-      "Precision": 0.2527881,
-      "Recall": 0.67105263,
-      "RPrecision": 0.27631578,
-      "MRR": 1.0,
+      "queryID": "91",
+      "precision": 0.2527881,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.6,
+      "recall": 0.67105263,
+      "rp": 0.26644737,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.29345173,
+          "precision": 0.29631308,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.29345173,
+          "precision": 0.29631308,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.17726901,
+          "precision": 0.27337953,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.29001316,
+          "precision": 0.27062562,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.19114447,
+          "precision": 0.27941063,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.2571912,
+          "precision": 0.25632378,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.2994126,
+          "precision": 0.24884093,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.2994126,
+          "precision": 0.24884093,
           "interpolated": true
         },
         {
           "recall": 0.8,
-          "precision": 0.2994126,
+          "precision": 0.24884093,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.2994126,
+          "precision": 0.24884093,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.2994126,
+          "precision": 0.24884093,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "92",
-      "Precision": 0.10391062,
-      "Recall": 0.8611111,
-      "RPrecision": 0.3148148,
-      "MRR": 1.0,
+      "queryID": "92",
+      "precision": 0.10391062,
+      "precisionAt5": 0.8,
+      "precisionAt10": 0.7,
+      "recall": 0.8611111,
+      "rp": 0.32407406,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5797,57 +5982,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 1.0123842,
+          "precision": 0.4736232,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.1797572,
+          "precision": 0.33127147,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.6345458,
+          "precision": 0.19886927,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.14173229,
+          "precision": 0.14634146,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.16859618,
+          "precision": 0.12567791,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.475658,
+          "precision": 0.10900147,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.26516086,
+          "precision": 0.105459094,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.26516086,
+          "precision": 0.105459094,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.26516086,
+          "precision": 0.105459094,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "93",
-      "Precision": 0.017598344,
-      "Recall": 0.9444444,
-      "RPrecision": 0.11111111,
-      "MRR": 1.0,
+      "queryID": "93",
+      "precision": 0.017598344,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.9444444,
+      "rp": 0.11111111,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5861,121 +6048,125 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.1697549,
+          "precision": 0.07362637,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.036022097,
+          "precision": 0.026873792,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.040884987,
+          "precision": 0.021166412,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.019438446,
+          "precision": 0.020547945,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.020002078,
+          "precision": 0.02057361,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.04629264,
+          "precision": 0.020369064,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.0078020776,
+          "precision": 0.018067855,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.040665045,
+          "precision": 0.018867392,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.040665045,
+          "precision": 0.018867392,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "94",
-      "Precision": 0.0785124,
-      "Recall": 0.88372093,
-      "RPrecision": 0.39534885,
-      "MRR": 1.0,
+      "queryID": "94",
+      "precision": 0.0785124,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.7,
+      "recall": 0.88372093,
+      "rp": 0.39534885,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.58750004,
+          "precision": 0.6541667,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.58750004,
+          "precision": 0.6541667,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.6431819,
+          "precision": 0.7409091,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.5315789,
+          "precision": 0.65166664,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 2.9649196,
+          "precision": 0.4245614,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.1269161,
+          "precision": 0.28101504,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.21913883,
+          "precision": 0.1316965,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.25742683,
+          "precision": 0.12788463,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.29671723,
+          "precision": 0.11526438,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.29671723,
+          "precision": 0.11526438,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.29671723,
+          "precision": 0.11526438,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "95",
-      "Precision": 0.0077319588,
-      "Recall": 0.6666667,
-      "RPrecision": 0.22222222,
-      "MRR": 1.0,
+      "queryID": "95",
+      "precision": 0.0077220076,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.6666667,
+      "rp": 0.22222222,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -5989,52 +6180,54 @@
         },
         {
           "recall": 0.3,
-          "precision": 1.8799999,
+          "precision": 0.45,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.392973,
+          "precision": 0.16313364,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.41437912,
+          "precision": 0.069180325,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.015785003,
+          "precision": 0.008685818,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.015785003,
+          "precision": 0.008685818,
           "interpolated": true
         },
         {
           "recall": 0.8,
-          "precision": 0.015785003,
+          "precision": 0.008685818,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.015785003,
+          "precision": 0.008685818,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.015785003,
+          "precision": 0.008685818,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "96",
-      "Precision": 0.019197207,
-      "Recall": 0.9166667,
-      "RPrecision": 0.16666667,
-      "MRR": 1.0,
+      "queryID": "96",
+      "precision": 0.018932875,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.2,
+      "recall": 0.9166667,
+      "rp": 0.16666667,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -6048,57 +6241,59 @@
         },
         {
           "recall": 0.2,
-          "precision": 1.6736844,
+          "precision": 0.65999997,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.08210525,
+          "precision": 0.16000001,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.34823534,
+          "precision": 0.13859649,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.06593407,
+          "precision": 0.06315789,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.019328427,
+          "precision": 0.020256372,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.03740786,
+          "precision": 0.019704271,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.009205774,
+          "precision": 0.018081866,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.007959897,
+          "precision": 0.018816024,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.007959897,
+          "precision": 0.018816024,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "97",
-      "Precision": 0.0121546965,
-      "Recall": 1.0,
-      "RPrecision": 0.27272728,
-      "MRR": 0.5,
+      "queryID": "97",
+      "precision": 0.0121546965,
+      "precisionAt5": 0.4,
+      "precisionAt10": 0.3,
+      "recall": 1.0,
+      "rp": 0.27272728,
+      "mrr": 0.5,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -6112,42 +6307,42 @@
         },
         {
           "recall": 0.2,
-          "precision": 0.8166667,
+          "precision": 0.6333333,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.81666666,
+          "precision": 0.44230768,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.57500005,
+          "precision": 0.2798535,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.2076087,
+          "precision": 0.2494824,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 1.0420291,
+          "precision": 0.16434777,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.10253162,
+          "precision": 0.09666667,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.34671542,
+          "precision": 0.07160236,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.46142647,
+          "precision": 0.020923432,
           "interpolated": false
         },
         {
@@ -6158,75 +6353,79 @@
       ]
     },
     {
-      "QueryID": "98",
-      "Precision": 0.020715632,
-      "Recall": 0.73333335,
-      "RPrecision": 0.06666667,
-      "MRR": 1.0,
+      "queryID": "98",
+      "precision": 0.020637898,
+      "precisionAt5": 0.2,
+      "precisionAt10": 0.1,
+      "recall": 0.73333335,
+      "rp": 0.06666667,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
-          "precision": 0.5500001,
+          "precision": 0.5476191,
           "interpolated": true
         },
         {
           "recall": 0.1,
-          "precision": 0.5500001,
+          "precision": 0.5476191,
           "interpolated": false
         },
         {
           "recall": 0.2,
-          "precision": 0.09090909,
+          "precision": 0.083333336,
           "interpolated": false
         },
         {
           "recall": 0.3,
-          "precision": 0.041233547,
+          "precision": 0.041666668,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 0.03076923,
+          "precision": 0.032258064,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.02319595,
+          "precision": 0.026667936,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.02189781,
+          "precision": 0.021531101,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.032250468,
+          "precision": 0.021605631,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.032250468,
+          "precision": 0.021605631,
           "interpolated": true
         },
         {
           "recall": 0.9,
-          "precision": 0.032250468,
+          "precision": 0.021605631,
           "interpolated": true
         },
         {
           "recall": 1.0,
-          "precision": 0.032250468,
+          "precision": 0.021605631,
           "interpolated": true
         }
       ]
     },
     {
-      "QueryID": "99",
-      "Precision": 0.008237232,
-      "Recall": 1.0,
-      "RPrecision": 0.6,
-      "MRR": 1.0,
+      "queryID": "99",
+      "precision": 0.008237232,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.3,
+      "recall": 1.0,
+      "rp": 0.6,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -6260,7 +6459,7 @@
         },
         {
           "recall": 0.7,
-          "precision": 3.0000002,
+          "precision": 0.6000001,
           "interpolated": false
         },
         {
@@ -6270,7 +6469,7 @@
         },
         {
           "recall": 0.9,
-          "precision": 0.8711697,
+          "precision": 0.104118645,
           "interpolated": false
         },
         {
@@ -6281,11 +6480,13 @@
       ]
     },
     {
-      "QueryID": "100",
-      "Precision": 0.010660981,
-      "Recall": 0.90909094,
-      "RPrecision": 0.36363637,
-      "MRR": 1.0,
+      "queryID": "100",
+      "precision": 0.010660981,
+      "precisionAt5": 0.6,
+      "precisionAt10": 0.3,
+      "recall": 0.90909094,
+      "rp": 0.27272728,
+      "mrr": 1.0,
       "PxRTable": [
         {
           "recall": 0.0,
@@ -6304,42 +6505,42 @@
         },
         {
           "recall": 0.3,
-          "precision": 2.0555558,
+          "precision": 0.8,
           "interpolated": false
         },
         {
           "recall": 0.4,
-          "precision": 1.6708333,
+          "precision": 0.20816329,
           "interpolated": false
         },
         {
           "recall": 0.5,
-          "precision": 0.056649473,
+          "precision": 0.016641852,
           "interpolated": false
         },
         {
           "recall": 0.6,
-          "precision": 0.013564751,
+          "precision": 0.012531585,
           "interpolated": false
         },
         {
           "recall": 0.7,
-          "precision": 0.01399363,
+          "precision": 0.012137141,
           "interpolated": false
         },
         {
           "recall": 0.8,
-          "precision": 0.011177947,
+          "precision": 0.012090692,
           "interpolated": false
         },
         {
           "recall": 0.9,
-          "precision": 0.024314828,
+          "precision": 0.010804561,
           "interpolated": false
         },
         {
           "recall": 1.0,
-          "precision": 0.024314828,
+          "precision": 0.010804561,
           "interpolated": true
         }
       ]
